@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Braille;
 using IO;
+using Settings;
 using UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -318,6 +319,8 @@ namespace Tutorial
                     TutorialOutputs.RebindBackOutputSubmit();
 
                     MultimodalInputManager.Instance?.DisableInput(MultimodalInputManager.InputType.Tutorial);
+                    SettingsManager.Settings.StartTutorial = false;
+                    SettingsManager.Instance.SaveSettings();
                     AssistiveOutput.WaitForKeyDown(() => SceneManager.LoadScene("Scenes/LetterSortingScene", LoadSceneMode.Single));
                     break;
             }

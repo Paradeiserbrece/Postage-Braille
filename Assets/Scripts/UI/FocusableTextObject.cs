@@ -35,7 +35,7 @@ namespace UI
 
         private void Awake()
         {
-            tmpText.color = GlobalSettings.TextColor;
+            tmpText.color = SettingsManager.Settings.TextColor;
         }
 
         private void RefreshDisplayedText()

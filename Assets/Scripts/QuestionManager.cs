@@ -157,7 +157,7 @@ public class QuestionManager : MonoBehaviour
                 letterObject.assistiveOutputType = AssistiveOutput.OutputType.Speak;
             }
 
-            braille.UpdateDotColor(GlobalSettings.QuestionBrailleColor);
+            braille.UpdateDotColor(SettingsManager.Settings.QuestionBrailleColor);
 
             foreach (var option in currentOptions)
             {
@@ -206,7 +206,7 @@ public class QuestionManager : MonoBehaviour
             parent.assistiveOutputType = AssistiveOutput.OutputType.Braille;
         }
 
-        focusableText.UpdateDotColor(GlobalSettings.QuestionTextColor);
+        focusableText.UpdateDotColor(SettingsManager.Settings.QuestionTextColor);
         parent.text = optionText;
         return parent;
     }
@@ -220,7 +220,7 @@ public class QuestionManager : MonoBehaviour
     public void ShowFeedback(bool correct)
     {
         feedbackText.text = correct ? "Richtig!" : "Falsch!";
-        var outputText = GlobalSettings.AdditionalAudioOutput
+        var outputText = SettingsManager.Settings.AdditionalAudioOutput
             ? feedbackText.text + " Drücke eine beliebige Taste um fortzufahren."
             : feedbackText.text;
         IOEventManager.InvokeAssistiveOutput( outputText , AssistiveOutput.OutputType.Both);

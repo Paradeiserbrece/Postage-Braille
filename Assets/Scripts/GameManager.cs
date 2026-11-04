@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Braille;
 using IO;
+using Settings;
 using UI;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -28,7 +29,8 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitUntil(() => SceneControl.Instance != null &&
                                          QuestionManager.Instance != null);
-        StartGame();
+        if (SettingsManager.Settings.StartTutorial) SceneControl.StartTutorial();
+        else StartGame();
     }
 
     private void StartGame()
@@ -59,6 +61,6 @@ public class GameManager : MonoBehaviour
         QuestionManager.Instance.ShowFeedback(correct);
         QuestionManager.Instance.letterObject.HideLetter();
 
-        AssistiveOutput.WaitForKeyDown(NextQuestion);
+        _ = AssistiveOutput.WaitForKeyDown(NextQuestion);
     }
 }

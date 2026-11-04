@@ -41,23 +41,23 @@ namespace Braille
         {
             foreach (RectTransform rect in _dotRects)
             {
-                rect.localScale = Vector3.one * GlobalSettings.DotSize;
+                rect.localScale = Vector3.one * SettingsManager.Settings.DotSize;
             }
         }
 
         /// <summary>
-        /// Sets the Dot Color to the default dot color specified in GlobalSettings.BrailleColor
+        /// Sets the Dot Color to the default dot color specified in SettingsManager.Settings.BrailleColor
         /// </summary>
         public void UpdateDotColor()
         {
             foreach (var image in _dotImages)
             {
-                image.color = GlobalSettings.BrailleColor;
+                image.color = SettingsManager.Settings.BrailleColor;
             }
         }
 
         /// <summary>
-        /// Sets the Dot Color to the default dot color specified in GlobalSettings.BrailleColor
+        /// Sets the Dot Color to the default dot color specified in SettingsManager.Settings.BrailleColor
         /// </summary>
         public void UpdateDotColor(Color color)
         {
@@ -68,19 +68,19 @@ namespace Braille
         }
         
         /// <summary>
-        /// Sets the Dot Color to the highlighted dot color specified in GlobalSettings.HighlightedColor
+        /// Sets the Dot Color to the highlighted dot color specified in SettingsManager.Settings.HighlightedColor
         /// </summary>
         public void HighlightDots()
         {
             foreach (var image in _dotImages)
             {
-                image.color = GlobalSettings.HighlightedColor;
+                image.color = SettingsManager.Settings.HighlightedColor;
             }
         }
 
         private void UpdateCharacterSize()
         {
-            _gridLayoutGroup.cellSize = Vector2.one * GlobalSettings.BrailleSize;
+            _gridLayoutGroup.cellSize = Vector2.one * SettingsManager.Settings.BrailleSize;
         }
 
         //DOES NOT CONVERT only takes bool list from the converter

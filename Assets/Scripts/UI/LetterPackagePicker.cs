@@ -82,10 +82,10 @@ namespace UI
             focusableUnit.attemptsTMP.text = letterUnit.attempts.ToString();
             focusableUnit.percentageTMP.text = letterUnit.SuccessPercentage + "%";
 
-            focusableUnit.indexTMP.color = GlobalSettings.PackageTextColor;
-            focusableUnit.lettersTMP.color = GlobalSettings.PackageTextColor;
-            focusableUnit.attemptsTMP.color = GlobalSettings.PackageTextColor;
-            focusableUnit.percentageTMP.color = GlobalSettings.PackageTextColor;
+            focusableUnit.indexTMP.color = SettingsManager.Settings.PackageTextColor;
+            focusableUnit.lettersTMP.color = SettingsManager.Settings.PackageTextColor;
+            focusableUnit.attemptsTMP.color = SettingsManager.Settings.PackageTextColor;
+            focusableUnit.percentageTMP.color = SettingsManager.Settings.PackageTextColor;
 
 
             focusableUnit.letterUnit = letterUnit;

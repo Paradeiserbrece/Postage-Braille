@@ -20,7 +20,7 @@ namespace UI
         private void Awake()
         {
             border.enabled = false;
-            border.color = GlobalSettings.HighlightedColor;
+            border.color = SettingsManager.Settings.HighlightedColor;
         }
 
         public override void Focus()

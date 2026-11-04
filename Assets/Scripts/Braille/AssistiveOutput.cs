@@ -99,7 +99,7 @@ namespace Braille
                 case OutputType.Braille:
                     visualOutputText.text = "Braille wird nicht vorgelesen.";
                     Tolk.Braille(text);
-                    if (GlobalSettings.AdditionalAudioOutput) Tolk.Speak("Braille wird nicht vorgelesen.");
+                    if (SettingsManager.Settings.AdditionalAudioOutput) Tolk.Speak("Braille wird nicht vorgelesen.");
                     break;
                 case OutputType.Speak:
                     visualOutputText.text = text;
@@ -156,7 +156,7 @@ namespace Braille
             if (Vector2.Distance(visualOutputText.transform.localPosition, endTextPosX) > 0.1f)
             {
                 visualOutputText.transform.localPosition = 
-                    Vector2.MoveTowards(visualOutputText.transform.localPosition, endTextPosX, GlobalSettings.TextScrollSpeed * Time.deltaTime);
+                    Vector2.MoveTowards(visualOutputText.transform.localPosition, endTextPosX, SettingsManager.Settings.TextScrollSpeed * Time.deltaTime);
             }
             else
             {
@@ -170,7 +170,7 @@ namespace Braille
         private float _textScrollingStartTime;
         private IEnumerator StartTextScrolling()
         {
-            yield return new WaitUntil(() => (Time.time >= (_textScrollingStartTime + GlobalSettings.TextScrollDelay)));
+            yield return new WaitUntil(() => (Time.time >= (_textScrollingStartTime + SettingsManager.Settings.TextScrollDelay)));
             _scrollText = true;
         }
 
@@ -178,7 +178,7 @@ namespace Braille
         
         private IEnumerator ResetTextPos()
         {
-            yield return new WaitUntil(() => (Time.time >= (_textResetDelayStartTime + GlobalSettings.TextResetDelay)));
+            yield return new WaitUntil(() => (Time.time >= (_textResetDelayStartTime + SettingsManager.Settings.TextResetDelay)));
             
             visualOutputText.transform.localPosition = defaultTextPosX;
             _resettingToDefaultPosition = false;

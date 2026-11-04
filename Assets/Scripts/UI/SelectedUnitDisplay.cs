@@ -20,9 +20,9 @@ namespace UI
 
         private void Start()
         {
-            indexTMP.color = GlobalSettings.TextColor;
-            lettersTMP.color = GlobalSettings.PackageTextColor;
-            percentageTMP.color = GlobalSettings.PackageTextColor;
+            indexTMP.color = SettingsManager.Settings.TextColor;
+            lettersTMP.color = SettingsManager.Settings.PackageTextColor;
+            percentageTMP.color = SettingsManager.Settings.PackageTextColor;
         }
 
         public void ChangeLetterUnit(LetterUnit letterUnit)
@@ -43,7 +43,7 @@ namespace UI
         {
             if (text != null)
                 IOEventManager.InvokeAssistiveOutput("Derzeitig Aktive Einheit: " + text,
-                    GlobalSettings.standardOutputType);
+                    SettingsManager.Settings.StandardOutputType);
             border.enabled = true;
         }
 
@@ -51,7 +51,7 @@ namespace UI
         {
             if (text != null)
                 IOEventManager.InvokeAssistiveOutput("Derzeitig Aktive Einheit: " + text,
-                    GlobalSettings.standardOutputType);
+                    SettingsManager.Settings.StandardOutputType);
         }
     }
 }

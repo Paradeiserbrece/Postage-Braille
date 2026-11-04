@@ -4,53 +4,59 @@ using Color = UnityEngine.Color;
 
 namespace Settings
 {
-    public static class GlobalSettings
+    [System.Serializable]
+    public class GlobalSettings
     {
-        public const AssistiveOutput.OutputType standardOutputType = AssistiveOutput.OutputType.Both;
-        public const AssistiveOutput.OutputType questionOutputType = AssistiveOutput.OutputType.Braille;
-        public const UITextObject.DisplayMode standardDisplayMode = UITextObject.DisplayMode.Braille;
-        public const float MinBrailleSize = 30f;
-        public const float BaseBrailleSize = 50f;
-        public const float MaxBrailleSize = 70f;
-        public const float BrailleSizeIncrement = 5f;
+        // General settings
+        public AssistiveOutput.OutputType StandardOutputType = AssistiveOutput.OutputType.Both;
+        public UITextObject.DisplayMode StandardDisplayMode = UITextObject.DisplayMode.Braille;
+        public bool StartTutorial = true;
 
-        public const float MinDotSize = 0.2f;
-        public const float BaseDotSize = 0.7f;
-        public const float MaxDotSize = 0.9f;
-        public const float DotSizeIncrement = 0.1f;
+        // Braille size
+        public float MinBrailleSize = 30f;
+        public float BaseBrailleSize = 50f;
+        public float MaxBrailleSize = 70f;
+        public float BrailleSizeIncrement = 5f;
+        public float BrailleSize = 50f;
 
-        public const float MinBrailleSpacing = 0f;
-        public const float BaseBrailleSpacing = 5f;
-        public const float MaxBrailleSpacing = 50f;
-        public const float BrailleSpacingIncrement = 5f;
+        // Dot size
+        public float MinDotSize = 0.2f;
+        public float BaseDotSize = 0.7f;
+        public float MaxDotSize = 0.9f;
+        public float DotSizeIncrement = 0.1f;
+        public float DotSize = 0.7f;
 
-        public const float MinLineSpacing = 20f;
-        public const float BaseLineSpacing = 100f;
-        public const float MaxLineSpacing = 150f;
-        public const float LineSpacingIncrement = 10f;
-        
-        
-        public const float TextScrollDelay = 1;
-        public const float TextResetDelay = 1;
-        public const float TextScrollSpeed = 520;
+        // Braille spacing
+        public float MinBrailleSpacing = 0f;
+        public float BaseBrailleSpacing = 5f;
+        public float MaxBrailleSpacing = 50f;
+        public float BrailleSpacingIncrement = 5f;
+        public float BrailleSpacing = 5f;
 
+        // Line spacing
+        public float MinLineSpacing = 20f;
+        public float BaseLineSpacing = 100f;
+        public float MaxLineSpacing = 150f;
+        public float LineSpacingIncrement = 10f;
+        public float LineSpacing = 100f;
 
-        public const bool AdditionalAudioOutput = false;
-        
+        // Text settings
+        public float TextScrollDelay = 1f;
+        public float TextResetDelay = 1f;
+        public float TextScrollSpeed = 520f;
 
+        // Audio settings
+        public bool AdditionalAudioOutput = false;
 
-        public static float BrailleSize = BaseBrailleSize;
-        public static float DotSize = BaseDotSize;
-        public static float BrailleSpacing = BaseBrailleSpacing;
-        public static float LineSpacing = BaseLineSpacing;
-        public static Color BrailleColor = Color.black;
-        public static Color HighlightedColor = Color.red;
-        public static Color HighlightedButtonColor = Color.brown;
-        public static Color TextColor = Color.white;
-        public static Color MenuOptionColor = Color.white;
-        public static Color SortingBoxColor = Color.white;
-        public static Color QuestionBrailleColor = Color.black;
-        public static Color QuestionTextColor = Color.black;
-        public static Color PackageTextColor = Color.black;
+        // Colors
+        public Color BrailleColor = Color.black;
+        public Color HighlightedColor = Color.red;
+        public Color HighlightedButtonColor = Color.brown;
+        public Color TextColor = Color.white;
+        public Color MenuOptionColor = Color.white;
+        public Color SortingBoxColor = Color.white;
+        public Color QuestionBrailleColor = Color.black;
+        public Color QuestionTextColor = Color.black;
+        public Color PackageTextColor = Color.black;
     }
 }

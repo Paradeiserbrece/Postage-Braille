@@ -1,4 +1,5 @@
 ﻿using IO;
+using Settings;
 
 namespace Tutorial
 {
@@ -40,7 +41,8 @@ namespace Tutorial
 
         public static string SecondAnswerSubmit()
         {
-            string outputText = "Du hast die Antwort bestätigt und bekommst danach eine Rückmeldung! Wenn eine Rückmeldung angezeigt wird kannst du eine beliebige Taste drücken um fortzufahren. Drücke auch jetzt eine beliebige Taste um fortzufahren.";
+            string outputText =
+                "Du hast die Antwort bestätigt und bekommst danach eine Rückmeldung! Wenn eine Rückmeldung angezeigt wird kannst du eine beliebige Taste drücken um fortzufahren. Drücke auch jetzt eine beliebige Taste um fortzufahren.";
             Output(outputText);
             return outputText;
         }
@@ -234,7 +236,7 @@ namespace Tutorial
         public static string RebindBackOutputSubmit()
         {
             var outputText =
-                "Super! Du hast die Einführung abgeschlossen! Du kommst jetzt zum Spielbildschirm zurück und kannst ab jetzt frei navigieren. Viel Spaß beim Lernen. Drücke eine beliebige Taste zum Fortfahren.";
+                "Super! Du hast die Einführung abgeschlossen! Du kommst jetzt zum Spielbildschirm zurück und kannst ab jetzt frei navigieren. Du kannst die Einführung mit dem Knopf in dem Menüband jederzeit erneut starten. Viel Spaß beim Lernen. Drücke eine beliebige Taste zum Fortfahren.";
             Output(outputText);
             return outputText;
         }
@@ -255,7 +257,7 @@ namespace Tutorial
 
         private static void Output(string text)
         {
-            IOEventManager.InvokeAssistiveOutput(text, Settings.GlobalSettings.standardOutputType);
+            IOEventManager.InvokeAssistiveOutput(text, SettingsManager.Settings.StandardOutputType);
         }
     }
 }

@@ -33,7 +33,7 @@ namespace UI
             var idx = LetterPackages.Instance.SelectLetterUnit(letterUnit);
             LetterPackagePicker.Instance.SelectLetterUnit(letterUnit);
             
-            IOEventManager.InvokeAssistiveOutput("Einheit gewechselt.", GlobalSettings.standardOutputType);
+            IOEventManager.InvokeAssistiveOutput("Einheit gewechselt.", SettingsManager.Settings.StandardOutputType);
         }
     }
 }
