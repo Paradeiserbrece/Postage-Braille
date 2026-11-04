@@ -1989,13 +1989,22 @@
             ]
         },
         {
-            "name": "ResetInput",
+            "name": "Constants",
             "id": "44da10d6-4546-4f0d-b853-c30c8277bdb9",
             "actions": [
                 {
                     "name": "reset",
                     "type": "Button",
                     "id": "002cfa16-7744-4c4f-b3d8-abdf77385101",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "any",
+                    "type": "Button",
+                    "id": "756b297a-5776-4808-b528-5d1f49ac48d2",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -2011,6 +2020,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "reset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2b66f787-2bb5-419c-a4b1-70018f52554b",
+                    "path": "<Keyboard>/anyKey",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "any",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

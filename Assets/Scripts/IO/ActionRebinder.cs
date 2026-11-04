@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using Utility;
 using Braille;
-using Serialization;
 
 namespace IO
 {
@@ -103,7 +102,9 @@ namespace IO
             {
                 _rebinding = true;
                 IOEventManager.AssistiveOutput("Neuen Knopf drücken", AssistiveOutput.OutputType.Both);
-                MultimodalInputManager.Instance.DisableInput(MultimodalInputManager.InputType.Navigation);
+                
+                inputAction.Disable();
+                Debug.Log("disableing worked: " );
                 button.SetBindingText("Click any button");
                 _rebindingOperation =
                     inputAction.PerformInteractiveRebinding().OnComplete(operation => RebindCompleted(inputAction, button)).Start();
@@ -113,7 +114,7 @@ namespace IO
         {
             _rebindingOperation.Dispose();
             button.SetBindingText(inputAction.bindings[0].effectivePath);
-            MultimodalInputManager.Instance.EnableInput(MultimodalInputManager.InputType.Navigation);
+            inputAction.Enable();
             _rebinding = false;
             IOEventManager.AssistiveOutput("Neuer knopf ist " + inputAction.bindings[0].effectivePath, AssistiveOutput.OutputType.Both);
 

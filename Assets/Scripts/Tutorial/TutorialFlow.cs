@@ -115,13 +115,12 @@ namespace Tutorial
             switch (currentState)
             {
                 case State.PickAnswer:
-                    var outputText = TutorialOutputs.SecondAnswerSubmit();
-                    AssistiveOutput.WaitForSpeakingToFinish(() =>
+                    TutorialOutputs.SecondAnswerSubmit();
+                    AssistiveOutput.WaitForKeyDown(() =>
                         {
                             currentState = State.AfterAnswerPicked;
                             UIManager.Instance.SwitchLayer((int)Layer.Letter);
-                        },
-                        outputText);
+                        });
 
                     break;
             }
@@ -316,11 +315,10 @@ namespace Tutorial
                     currentState = State.SettingsMenuNavigation;
                     break;
                 case State.SettingsMenuNavigation:
-                    var text = TutorialOutputs.RebindBackOutputSubmit();
+                    TutorialOutputs.RebindBackOutputSubmit();
 
                     MultimodalInputManager.Instance?.DisableInput(MultimodalInputManager.InputType.Tutorial);
-                    AssistiveOutput.WaitForSpeakingToFinish(() => SceneManager.LoadScene("Scenes/LetterSortingScene"),
-                        text);
+                    AssistiveOutput.WaitForKeyDown(() => SceneManager.LoadScene("Scenes/LetterSortingScene", LoadSceneMode.Single));
                     break;
             }
         }

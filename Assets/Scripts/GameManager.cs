@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Braille;
 using IO;
 using UI;
 using UnityEngine;
@@ -17,12 +18,10 @@ public class GameManager : MonoBehaviour
     }
 
     public GameState currentState;
-    private Action<string, float> _invoke;
 
     private void Awake()
     {
         Instance = this;
-        _invoke = Invoke;
     }
 
     private IEnumerator Start()
@@ -60,6 +59,6 @@ public class GameManager : MonoBehaviour
         QuestionManager.Instance.ShowFeedback(correct);
         QuestionManager.Instance.letterObject.HideLetter();
 
-        _invoke(nameof(NextQuestion), 1.5f);
+        AssistiveOutput.WaitForKeyDown(NextQuestion);
     }
 }

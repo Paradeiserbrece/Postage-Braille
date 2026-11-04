@@ -12,14 +12,14 @@ namespace IO
 
         public override void Enable()
         {
-            Actions.ResetInput.reset.started += OnReset;
-            Actions.ResetInput.Enable();
+            Actions.Constants.reset.started += OnReset;
+            Actions.Constants.Enable();
         }
 
         public override void Disable()
         {
-            Actions.ResetInput.reset.started -= OnReset;
-            Actions.ResetInput.Disable();
+            Actions.Constants.reset.started -= OnReset;
+            Actions.Constants.Disable();
         }
 
         private void OnReset(InputAction.CallbackContext callbackContext)

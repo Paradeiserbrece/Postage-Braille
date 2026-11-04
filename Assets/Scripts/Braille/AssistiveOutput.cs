@@ -1,9 +1,12 @@
 using System;
+using System.Collections;
 using System.Threading.Tasks;
 using DavyKager;
 using IO;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
 // Tolk accessibility wrapper
@@ -20,6 +23,8 @@ namespace Braille
         private string _resetTextPos;
         private string _startTextScrolling;
         private Action<string, float> _invoke;
+
+        private static InputAction _anyKey;
 
         public enum OutputType
         {
@@ -59,6 +64,7 @@ namespace Braille
                 Debug.Log("This screen reader driver supports braille.");
 
             defaultTextPosX = endTextPosX = visualOutputText.transform.localPosition;
+            _anyKey = MultimodalInputManager.Instance.Actions.Constants.any;
         }
 
         private void Update()
@@ -97,6 +103,7 @@ namespace Braille
                 case OutputType.Braille:
                     visualOutputText.text = "Braille wird nicht vorgelesen.";
                     Tolk.Braille(text);
+                    Tolk.Speak("Braille wird nicht vorgelesen.");
                     break;
                 case OutputType.Speak:
                     visualOutputText.text = text;
@@ -194,6 +201,24 @@ namespace Braille
 
             await Task.Delay(TimeSpan.FromSeconds(TimePerCharacter * text.Length));
             action?.Invoke();
+        }
+        
+        /// <summary>
+        /// Waits for any key to be pressed and then invokes the given action
+        /// </summary>
+        /// <param name="action">the action to be invoked</param>
+        /// <returns></returns>
+        public static async Awaitable WaitForKeyDown(Action action)
+        {
+            Debug.Log("dei mama mecht invoked werdn");
+            await Awaitable.NextFrameAsync();
+            while(!_anyKey.WasPressedThisFrame())
+            {
+                Debug.Log("wort mol");
+                await Awaitable.NextFrameAsync();
+            }
+            Debug.Log("Dei mama werd glei so invoked");
+            action.Invoke();
         }
     }
 }
