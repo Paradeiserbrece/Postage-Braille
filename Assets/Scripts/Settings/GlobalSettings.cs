@@ -28,6 +28,15 @@ namespace Settings
         public const float BaseLineSpacing = 100f;
         public const float MaxLineSpacing = 150f;
         public const float LineSpacingIncrement = 10f;
+        
+        
+        public const float TextScrollDelay = 1;
+        public const float TextResetDelay = 1;
+        public const float TextScrollSpeed = 520;
+
+
+        public const bool AdditionalAudioOutput = false;
+        
 
 
         public static float BrailleSize = BaseBrailleSize;

@@ -24,7 +24,7 @@ namespace IO
 
         private void OnReset(InputAction.CallbackContext callbackContext)
         {
-            ActionRebinder.ResetRebinds();
+            ActionRebinder.Instance.ResetRebinds();
             IOEventManager.AssistiveOutput("Tastenbelegung zurückgesetzt", AssistiveOutput.OutputType.Both);
         }
     }

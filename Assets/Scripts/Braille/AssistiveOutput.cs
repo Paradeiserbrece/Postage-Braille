@@ -3,6 +3,7 @@ using System.Collections;
 using System.Threading.Tasks;
 using DavyKager;
 using IO;
+using Settings;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -22,7 +23,6 @@ namespace Braille
         private const float fontCharacterWidth = 0.63197183098591549295774647887324f;
         private string _resetTextPos;
         private string _startTextScrolling;
-        private Action<string, float> _invoke;
 
         private static InputAction _anyKey;
 
@@ -37,10 +37,6 @@ namespace Braille
         {
             IOEventManager.AssistiveOutput += Output;
             IOEventManager.DefaultOutput += OnDefaultOutput;
-
-            _resetTextPos = nameof(ResetTextPos);
-            _startTextScrolling = nameof(StartTextScrolling);
-            _invoke = Invoke;
         }
 
         private Vector2 endTextPosX;
@@ -103,7 +99,7 @@ namespace Braille
                 case OutputType.Braille:
                     visualOutputText.text = "Braille wird nicht vorgelesen.";
                     Tolk.Braille(text);
-                    Tolk.Speak("Braille wird nicht vorgelesen.");
+                    if (GlobalSettings.AdditionalAudioOutput) Tolk.Speak("Braille wird nicht vorgelesen.");
                     break;
                 case OutputType.Speak:
                     visualOutputText.text = text;
@@ -119,7 +115,9 @@ namespace Braille
 
             visualOutputText.transform.localPosition = defaultTextPosX;
             _scrollText = false;
-            Invoke(_startTextScrolling, TextScrollDelay);
+            
+            _textScrollingStartTime = Time.time;
+            StartCoroutine(StartTextScrolling());
             CalculateOutputTextPos();
         }
 
@@ -147,40 +145,46 @@ namespace Braille
 
         private bool _resettingToDefaultPosition = false;
         private bool _scrollText = false;
-        private const int TextScrollDelay = 1;
-        private const int TextResetDelay = 1;
 
         //TODO: Put all the text related stuff in its own mono-behaviour so assistive output doesnt handle the text position
         private void MoveAssistiveOutputTextToEndPos()
         {
             // If we reset to the default position, we wait for _textResetDelay seconds until we reset.
             // we do not have to move the text anymore that time 
-            if (_resettingToDefaultPosition) return;
+            if (_resettingToDefaultPosition || !_scrollText) return;
             
-            if (_scrollText && Vector2.Distance(visualOutputText.transform.localPosition, endTextPosX) > 0.1f)
+            if (Vector2.Distance(visualOutputText.transform.localPosition, endTextPosX) > 0.1f)
             {
                 visualOutputText.transform.localPosition = 
-                    Vector2.MoveTowards(visualOutputText.transform.localPosition, endTextPosX, 520 * Time.deltaTime);
+                    Vector2.MoveTowards(visualOutputText.transform.localPosition, endTextPosX, GlobalSettings.TextScrollSpeed * Time.deltaTime);
             }
             else
             {
                 _resettingToDefaultPosition = true;
                 _scrollText = false;
-                // This is necessary due to how Invoke is handled within c#
-                // Invoke is being stored in _invoke so the Invoke Heading is not being generated and garbage collected each time we reset the textPos
-                _invoke(_resetTextPos, TextResetDelay);
+                _textResetDelayStartTime = Time.time;
+                StartCoroutine(ResetTextPos());
             }
         }
 
-        private void StartTextScrolling()
+        private float _textScrollingStartTime;
+        private IEnumerator StartTextScrolling()
         {
+            yield return new WaitUntil(() => (Time.time >= (_textScrollingStartTime + GlobalSettings.TextScrollDelay)));
             _scrollText = true;
         }
 
-        private void ResetTextPos()
+        private float _textResetDelayStartTime;
+        
+        private IEnumerator ResetTextPos()
         {
+            yield return new WaitUntil(() => (Time.time >= (_textResetDelayStartTime + GlobalSettings.TextResetDelay)));
+            
             visualOutputText.transform.localPosition = defaultTextPosX;
             _resettingToDefaultPosition = false;
+
+            _textScrollingStartTime = Time.time;
+            StartCoroutine(StartTextScrolling());
         }
 
         private const float TimePerCharacter = 0.08f;
@@ -210,14 +214,11 @@ namespace Braille
         /// <returns></returns>
         public static async Awaitable WaitForKeyDown(Action action)
         {
-            Debug.Log("dei mama mecht invoked werdn");
             await Awaitable.NextFrameAsync();
             while(!_anyKey.WasPressedThisFrame())
             {
-                Debug.Log("wort mol");
                 await Awaitable.NextFrameAsync();
             }
-            Debug.Log("Dei mama werd glei so invoked");
             action.Invoke();
         }
     }

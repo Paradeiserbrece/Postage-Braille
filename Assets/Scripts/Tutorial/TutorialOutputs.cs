@@ -40,7 +40,7 @@ namespace Tutorial
 
         public static string SecondAnswerSubmit()
         {
-            string outputText = "Du hast die Antwort bestätigt und bekommst danach eine Rückmeldung!";
+            string outputText = "Du hast die Antwort bestätigt und bekommst danach eine Rückmeldung! Wenn eine Rückmeldung angezeigt wird kannst du eine beliebige Taste drücken um fortzufahren. Drücke auch jetzt eine beliebige Taste um fortzufahren.";
             Output(outputText);
             return outputText;
         }
@@ -234,7 +234,7 @@ namespace Tutorial
         public static string RebindBackOutputSubmit()
         {
             var outputText =
-                "Super! Du hast die Einführung abgeschlossen! Du kommst jetzt zum Spielbildschirm zurück und kannst ab jetzt frei navigieren. Viel Spaß beim Lernen.";
+                "Super! Du hast die Einführung abgeschlossen! Du kommst jetzt zum Spielbildschirm zurück und kannst ab jetzt frei navigieren. Viel Spaß beim Lernen. Drücke eine beliebige Taste zum Fortfahren.";
             Output(outputText);
             return outputText;
         }
@@ -248,7 +248,7 @@ namespace Tutorial
 
         public static string SkipTutorial()
         {
-            var outputText = "Einführung wird Übersprungen.";
+            var outputText = "Einführung wird Übersprungen. Drücke eine beliebige Taste zum Fortfahren.";
             Output(outputText);
             return outputText;
         }

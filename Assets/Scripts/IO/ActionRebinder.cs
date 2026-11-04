@@ -137,12 +137,13 @@ namespace IO
             }
         }
         
-        public static void ResetRebinds()
+        public void ResetRebinds()
         {
             MultimodalInputManager.Instance.Actions.RemoveAllBindingOverrides();
             PlayerPrefs.DeleteKey("Rebinds");
 
             PlayerPrefs.Save();
+            ReListAllActions();
         }
     }
 }

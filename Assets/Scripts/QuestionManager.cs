@@ -220,7 +220,10 @@ public class QuestionManager : MonoBehaviour
     public void ShowFeedback(bool correct)
     {
         feedbackText.text = correct ? "Richtig!" : "Falsch!";
-        IOEventManager.InvokeAssistiveOutput( correct ? "Richtig!" : "Falsch!", AssistiveOutput.OutputType.Both);
+        var outputText = GlobalSettings.AdditionalAudioOutput
+            ? feedbackText.text + " Drücke eine beliebige Taste um fortzufahren."
+            : feedbackText.text;
+        IOEventManager.InvokeAssistiveOutput( outputText , AssistiveOutput.OutputType.Both);
     }
 
 
