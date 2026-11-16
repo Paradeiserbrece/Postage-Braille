@@ -12,27 +12,27 @@ namespace IO
         }
         public override void Enable()
         {
-            Actions.BrailleSettings.BrailleSizeUp.started += OnBrailleSizeUp;
-            Actions.BrailleSettings.BrailleSizeDown.started += OnBrailleSizeDown;
-            Actions.BrailleSettings.DotSizeUp.started += OnDotSizeUp;
-            Actions.BrailleSettings.DotSizeDown.started += OnDotSizeDown;
-            Actions.BrailleSettings.BrailleSpacingUp.started += OnBrailleSpacingUp;
-            Actions.BrailleSettings.BrailleSpacingDown.started += OnBrailleSpacingDown;
-            Actions.BrailleSettings.LineSpacingUp.started += OnLineSpacingUp;
-            Actions.BrailleSettings.LineSpacingDown.started += OnLineSpacingDown;
+            Actions.BrailleSettings.Schriftgrößeerhöhen.started += OnBrailleSizeUp;
+            Actions.BrailleSettings.Schriftgrößeverkleinern.started += OnBrailleSizeDown;
+            Actions.BrailleSettings.Punktgrößeerhöhen.started += OnDotSizeUp;
+            Actions.BrailleSettings.Punktgrößeverkleinern.started += OnDotSizeDown;
+            Actions.BrailleSettings.Zeichenabstanderhöhen.started += OnBrailleSpacingUp;
+            Actions.BrailleSettings.Zeichenabstandverkleinern.started += OnBrailleSpacingDown;
+            Actions.BrailleSettings.Zeilenabstanderhöhen.started += OnLineSpacingUp;
+            Actions.BrailleSettings.Zeilenabstandverkleinern.started += OnLineSpacingDown;
             Actions.BrailleSettings.Enable();
         }
 
         public override void Disable()
         {
-            Actions.BrailleSettings.BrailleSizeUp.started -= OnBrailleSizeUp;
-            Actions.BrailleSettings.BrailleSizeDown.started -= OnBrailleSizeDown;
-            Actions.BrailleSettings.DotSizeUp.started -= OnDotSizeUp;
-            Actions.BrailleSettings.DotSizeDown.started -= OnDotSizeDown;
-            Actions.BrailleSettings.BrailleSpacingUp.started -= OnBrailleSpacingUp;
-            Actions.BrailleSettings.BrailleSpacingDown.started -= OnBrailleSpacingDown;
-            Actions.BrailleSettings.LineSpacingUp.started -= OnLineSpacingUp;
-            Actions.BrailleSettings.LineSpacingDown.started -= OnLineSpacingDown;
+            Actions.BrailleSettings.Schriftgrößeerhöhen.started -= OnBrailleSizeUp;
+            Actions.BrailleSettings.Schriftgrößeverkleinern.started -= OnBrailleSizeDown;
+            Actions.BrailleSettings.Punktgrößeerhöhen.started -= OnDotSizeUp;
+            Actions.BrailleSettings.Punktgrößeverkleinern.started -= OnDotSizeDown;
+            Actions.BrailleSettings.Zeichenabstanderhöhen.started -= OnBrailleSpacingUp;
+            Actions.BrailleSettings.Zeichenabstandverkleinern.started -= OnBrailleSpacingDown;
+            Actions.BrailleSettings.Zeilenabstanderhöhen.started -= OnLineSpacingUp;
+            Actions.BrailleSettings.Zeilenabstandverkleinern.started -= OnLineSpacingDown;
             Actions.BrailleSettings.Disable();
         }
 

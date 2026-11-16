@@ -12,13 +12,13 @@ namespace IO
 
         public override void Enable()
         {
-            Actions.Constants.reset.started += OnReset;
+            Actions.Constants.Tastenbelegungzurücksetzen.started += OnReset;
             Actions.Constants.Enable();
         }
 
         public override void Disable()
         {
-            Actions.Constants.reset.started -= OnReset;
+            Actions.Constants.Tastenbelegungzurücksetzen.started -= OnReset;
             Actions.Constants.Disable();
         }
 

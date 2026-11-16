@@ -95,7 +95,7 @@ namespace IO
             ""id"": ""5c0322a0-2b7c-41d4-96d7-c9ed0ba7f0e4"",
             ""actions"": [
                 {
-                    ""name"": ""Dot0"",
+                    ""name"": ""Punkt 1"",
                     ""type"": ""Button"",
                     ""id"": ""b1c319fb-d426-429f-8065-f34c7f46eb10"",
                     ""expectedControlType"": """",
@@ -104,7 +104,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Dot1"",
+                    ""name"": ""Punkt 2"",
                     ""type"": ""Button"",
                     ""id"": ""75426906-62fc-41a5-b4a3-9cf14672683d"",
                     ""expectedControlType"": """",
@@ -113,7 +113,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Dot2"",
+                    ""name"": ""Punkt 3"",
                     ""type"": ""Button"",
                     ""id"": ""26d76ad9-e422-45e4-bb5f-0a2433e3c8c0"",
                     ""expectedControlType"": """",
@@ -122,7 +122,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Dot3"",
+                    ""name"": ""Punkt 4"",
                     ""type"": ""Button"",
                     ""id"": ""ec902e29-2346-4d06-85bb-1715c56b0205"",
                     ""expectedControlType"": """",
@@ -131,7 +131,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Dot4"",
+                    ""name"": ""Punkt 5"",
                     ""type"": ""Button"",
                     ""id"": ""d3be0a1e-f422-4a2a-b32d-96063a1c6317"",
                     ""expectedControlType"": """",
@@ -140,7 +140,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Dot5"",
+                    ""name"": ""Punkt 6"",
                     ""type"": ""Button"",
                     ""id"": ""3725501b-cd31-494c-8dfb-c07445ef228c"",
                     ""expectedControlType"": """",
@@ -149,7 +149,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Space"",
+                    ""name"": ""Leertaste"",
                     ""type"": ""Button"",
                     ""id"": ""c19364b2-9a56-4ed3-b4c7-06806d1ac702"",
                     ""expectedControlType"": """",
@@ -158,7 +158,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Delete"",
+                    ""name"": ""Rücktaste"",
                     ""type"": ""Button"",
                     ""id"": ""bf986db2-29c1-44a2-8443-5831968709ac"",
                     ""expectedControlType"": """",
@@ -175,7 +175,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Dot0"",
+                    ""action"": ""Punkt 1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -186,7 +186,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Dot1"",
+                    ""action"": ""Punkt 2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -197,7 +197,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Dot2"",
+                    ""action"": ""Punkt 3"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -208,7 +208,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Dot3"",
+                    ""action"": ""Punkt 4"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -219,7 +219,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Dot4"",
+                    ""action"": ""Punkt 5"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -230,7 +230,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Dot5"",
+                    ""action"": ""Punkt 6"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -241,7 +241,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Space"",
+                    ""action"": ""Leertaste"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -252,7 +252,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Delete"",
+                    ""action"": ""Rücktaste"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -263,7 +263,7 @@ namespace IO
             ""id"": ""97912eb7-eefd-45f7-a82c-bc948080cf9f"",
             ""actions"": [
                 {
-                    ""name"": ""BrailleSizeUp"",
+                    ""name"": ""Schriftgröße erhöhen"",
                     ""type"": ""Button"",
                     ""id"": ""a5a5b794-6c42-4935-824f-3d83a4bc3162"",
                     ""expectedControlType"": """",
@@ -272,7 +272,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""BrailleSizeDown"",
+                    ""name"": ""Schriftgröße verkleinern"",
                     ""type"": ""Button"",
                     ""id"": ""91087f4c-6700-441d-a54a-d7379e86609b"",
                     ""expectedControlType"": """",
@@ -281,7 +281,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""DotSizeUp"",
+                    ""name"": ""Punktgröße erhöhen"",
                     ""type"": ""Button"",
                     ""id"": ""7c5adfd4-fb8c-4ab4-b614-2d7a983a55d4"",
                     ""expectedControlType"": """",
@@ -290,7 +290,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""DotSizeDown"",
+                    ""name"": ""Punktgröße verkleinern"",
                     ""type"": ""Button"",
                     ""id"": ""02da410a-1bef-4492-87b9-fc6c97fa7204"",
                     ""expectedControlType"": """",
@@ -299,7 +299,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""BrailleSpacingUp"",
+                    ""name"": ""Zeichenabstand erhöhen"",
                     ""type"": ""Button"",
                     ""id"": ""bab74876-d753-4e47-b6f5-b7b6a0eadf41"",
                     ""expectedControlType"": """",
@@ -308,7 +308,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""BrailleSpacingDown"",
+                    ""name"": ""Zeichenabstand verkleinern"",
                     ""type"": ""Button"",
                     ""id"": ""a8c271b9-7c30-4cd6-a156-dd4cb718f4c1"",
                     ""expectedControlType"": """",
@@ -317,7 +317,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""LineSpacingUp"",
+                    ""name"": ""Zeilenabstand erhöhen"",
                     ""type"": ""Button"",
                     ""id"": ""9a49bae7-649a-4975-985a-1b79ff85a53e"",
                     ""expectedControlType"": """",
@@ -326,7 +326,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""LineSpacingDown"",
+                    ""name"": ""Zeilenabstand verkleinern"",
                     ""type"": ""Button"",
                     ""id"": ""5617dde9-2469-48c2-a7b5-12e34aba8977"",
                     ""expectedControlType"": """",
@@ -343,7 +343,7 @@ namespace IO
                     ""interactions"": ""Press"",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""BrailleSizeUp"",
+                    ""action"": ""Schriftgröße erhöhen"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -354,7 +354,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""BrailleSizeDown"",
+                    ""action"": ""Schriftgröße verkleinern"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -365,7 +365,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""DotSizeUp"",
+                    ""action"": ""Punktgröße erhöhen"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -376,7 +376,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""DotSizeDown"",
+                    ""action"": ""Punktgröße verkleinern"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -387,7 +387,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""BrailleSpacingUp"",
+                    ""action"": ""Zeichenabstand erhöhen"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -398,7 +398,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""BrailleSpacingDown"",
+                    ""action"": ""Zeichenabstand verkleinern"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -409,7 +409,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""LineSpacingUp"",
+                    ""action"": ""Zeilenabstand erhöhen"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -420,7 +420,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""LineSpacingDown"",
+                    ""action"": ""Zeilenabstand verkleinern"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -431,7 +431,7 @@ namespace IO
             ""id"": ""551f1fdd-0629-479f-ac77-27f5931e6de5"",
             ""actions"": [
                 {
-                    ""name"": ""next"",
+                    ""name"": ""weiter"",
                     ""type"": ""Button"",
                     ""id"": ""8cb8b65b-3f9d-4137-905a-92a450d5c08a"",
                     ""expectedControlType"": """",
@@ -440,7 +440,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""prev"",
+                    ""name"": ""zurück"",
                     ""type"": ""Button"",
                     ""id"": ""e2cef3cf-fb95-4336-b071-7094ed7c10d9"",
                     ""expectedControlType"": """",
@@ -449,7 +449,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""answer0"",
+                    ""name"": ""antwort 1"",
                     ""type"": ""Button"",
                     ""id"": ""275fe278-a833-4619-8a97-8965ca105d61"",
                     ""expectedControlType"": """",
@@ -458,7 +458,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""answer1"",
+                    ""name"": ""antwort 2"",
                     ""type"": ""Button"",
                     ""id"": ""5b044e24-b65c-4e80-aab7-8eea6675adc7"",
                     ""expectedControlType"": """",
@@ -467,7 +467,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""answer2"",
+                    ""name"": ""antwort 3"",
                     ""type"": ""Button"",
                     ""id"": ""16690296-570f-44f5-a834-07717440024b"",
                     ""expectedControlType"": """",
@@ -476,7 +476,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""answer3"",
+                    ""name"": ""antwort 4"",
                     ""type"": ""Button"",
                     ""id"": ""328db5b8-d6c5-4f77-b82e-ecb9cc231905"",
                     ""expectedControlType"": """",
@@ -485,7 +485,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""answer4"",
+                    ""name"": ""antwort 5"",
                     ""type"": ""Button"",
                     ""id"": ""1f3c52b8-ea2c-4151-b25e-a2762125783d"",
                     ""expectedControlType"": """",
@@ -494,7 +494,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""answer5"",
+                    ""name"": ""antwort 6"",
                     ""type"": ""Button"",
                     ""id"": ""7310f6c2-3f7c-4367-a6c3-5343e972af65"",
                     ""expectedControlType"": """",
@@ -503,7 +503,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""confirm"",
+                    ""name"": ""bestätigen"",
                     ""type"": ""Button"",
                     ""id"": ""d6966af9-abee-40a1-a1ab-1eb97c8d6876"",
                     ""expectedControlType"": """",
@@ -512,7 +512,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Switch UI Layer"",
+                    ""name"": ""UI Layer wechseln"",
                     ""type"": ""Button"",
                     ""id"": ""6367a5a5-48ff-44c7-a8e5-e805bca1c5da"",
                     ""expectedControlType"": """",
@@ -529,7 +529,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""next"",
+                    ""action"": ""weiter"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -540,7 +540,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""prev"",
+                    ""action"": ""zurück"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -551,7 +551,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""answer0"",
+                    ""action"": ""antwort 1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -562,7 +562,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""answer1"",
+                    ""action"": ""antwort 2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -573,7 +573,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""answer2"",
+                    ""action"": ""antwort 3"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -584,7 +584,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""answer3"",
+                    ""action"": ""antwort 4"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -595,7 +595,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""answer4"",
+                    ""action"": ""antwort 5"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -606,7 +606,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""answer5"",
+                    ""action"": ""antwort 6"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -617,7 +617,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""confirm"",
+                    ""action"": ""bestätigen"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -628,7 +628,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Switch UI Layer"",
+                    ""action"": ""UI Layer wechseln"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -639,7 +639,7 @@ namespace IO
             ""id"": ""5c6959f8-f063-495d-9d01-485dde983b17"",
             ""actions"": [
                 {
-                    ""name"": ""next"",
+                    ""name"": ""weiter"",
                     ""type"": ""Button"",
                     ""id"": ""ec65a48e-1610-48fa-b140-0303b842b650"",
                     ""expectedControlType"": """",
@@ -648,7 +648,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""prev"",
+                    ""name"": ""zurück"",
                     ""type"": ""Button"",
                     ""id"": ""3488d212-64e3-43b3-996b-42fa31e1248b"",
                     ""expectedControlType"": """",
@@ -657,7 +657,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""confirm"",
+                    ""name"": ""bestätigen"",
                     ""type"": ""Button"",
                     ""id"": ""3b733802-03d1-439d-8e44-ca0dc8853697"",
                     ""expectedControlType"": """",
@@ -666,7 +666,7 @@ namespace IO
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Switch UI Layer"",
+                    ""name"": ""UI Layer wechseln"",
                     ""type"": ""Button"",
                     ""id"": ""f6c04bff-f893-44b7-a3c0-d643275b39ae"",
                     ""expectedControlType"": """",
@@ -692,7 +692,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""next"",
+                    ""action"": ""weiter"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -703,7 +703,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""prev"",
+                    ""action"": ""zurück"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -714,7 +714,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""confirm"",
+                    ""action"": ""bestätigen"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -725,7 +725,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Switch UI Layer"",
+                    ""action"": ""UI Layer wechseln"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -2081,7 +2081,7 @@ namespace IO
             ""id"": ""44da10d6-4546-4f0d-b853-c30c8277bdb9"",
             ""actions"": [
                 {
-                    ""name"": ""reset"",
+                    ""name"": ""Tastenbelegung zurücksetzen"",
                     ""type"": ""Button"",
                     ""id"": ""002cfa16-7744-4c4f-b3d8-abdf77385101"",
                     ""expectedControlType"": """",
@@ -2107,7 +2107,7 @@ namespace IO
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""reset"",
+                    ""action"": ""Tastenbelegung zurücksetzen"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -2129,42 +2129,42 @@ namespace IO
 }");
             // PerkinsBrailer
             m_PerkinsBrailer = asset.FindActionMap("PerkinsBrailer", throwIfNotFound: true);
-            m_PerkinsBrailer_Dot0 = m_PerkinsBrailer.FindAction("Dot0", throwIfNotFound: true);
-            m_PerkinsBrailer_Dot1 = m_PerkinsBrailer.FindAction("Dot1", throwIfNotFound: true);
-            m_PerkinsBrailer_Dot2 = m_PerkinsBrailer.FindAction("Dot2", throwIfNotFound: true);
-            m_PerkinsBrailer_Dot3 = m_PerkinsBrailer.FindAction("Dot3", throwIfNotFound: true);
-            m_PerkinsBrailer_Dot4 = m_PerkinsBrailer.FindAction("Dot4", throwIfNotFound: true);
-            m_PerkinsBrailer_Dot5 = m_PerkinsBrailer.FindAction("Dot5", throwIfNotFound: true);
-            m_PerkinsBrailer_Space = m_PerkinsBrailer.FindAction("Space", throwIfNotFound: true);
-            m_PerkinsBrailer_Delete = m_PerkinsBrailer.FindAction("Delete", throwIfNotFound: true);
+            m_PerkinsBrailer_Punkt1 = m_PerkinsBrailer.FindAction("Punkt 1", throwIfNotFound: true);
+            m_PerkinsBrailer_Punkt2 = m_PerkinsBrailer.FindAction("Punkt 2", throwIfNotFound: true);
+            m_PerkinsBrailer_Punkt3 = m_PerkinsBrailer.FindAction("Punkt 3", throwIfNotFound: true);
+            m_PerkinsBrailer_Punkt4 = m_PerkinsBrailer.FindAction("Punkt 4", throwIfNotFound: true);
+            m_PerkinsBrailer_Punkt5 = m_PerkinsBrailer.FindAction("Punkt 5", throwIfNotFound: true);
+            m_PerkinsBrailer_Punkt6 = m_PerkinsBrailer.FindAction("Punkt 6", throwIfNotFound: true);
+            m_PerkinsBrailer_Leertaste = m_PerkinsBrailer.FindAction("Leertaste", throwIfNotFound: true);
+            m_PerkinsBrailer_Rücktaste = m_PerkinsBrailer.FindAction("Rücktaste", throwIfNotFound: true);
             // BrailleSettings
             m_BrailleSettings = asset.FindActionMap("BrailleSettings", throwIfNotFound: true);
-            m_BrailleSettings_BrailleSizeUp = m_BrailleSettings.FindAction("BrailleSizeUp", throwIfNotFound: true);
-            m_BrailleSettings_BrailleSizeDown = m_BrailleSettings.FindAction("BrailleSizeDown", throwIfNotFound: true);
-            m_BrailleSettings_DotSizeUp = m_BrailleSettings.FindAction("DotSizeUp", throwIfNotFound: true);
-            m_BrailleSettings_DotSizeDown = m_BrailleSettings.FindAction("DotSizeDown", throwIfNotFound: true);
-            m_BrailleSettings_BrailleSpacingUp = m_BrailleSettings.FindAction("BrailleSpacingUp", throwIfNotFound: true);
-            m_BrailleSettings_BrailleSpacingDown = m_BrailleSettings.FindAction("BrailleSpacingDown", throwIfNotFound: true);
-            m_BrailleSettings_LineSpacingUp = m_BrailleSettings.FindAction("LineSpacingUp", throwIfNotFound: true);
-            m_BrailleSettings_LineSpacingDown = m_BrailleSettings.FindAction("LineSpacingDown", throwIfNotFound: true);
+            m_BrailleSettings_Schriftgrößeerhöhen = m_BrailleSettings.FindAction("Schriftgröße erhöhen", throwIfNotFound: true);
+            m_BrailleSettings_Schriftgrößeverkleinern = m_BrailleSettings.FindAction("Schriftgröße verkleinern", throwIfNotFound: true);
+            m_BrailleSettings_Punktgrößeerhöhen = m_BrailleSettings.FindAction("Punktgröße erhöhen", throwIfNotFound: true);
+            m_BrailleSettings_Punktgrößeverkleinern = m_BrailleSettings.FindAction("Punktgröße verkleinern", throwIfNotFound: true);
+            m_BrailleSettings_Zeichenabstanderhöhen = m_BrailleSettings.FindAction("Zeichenabstand erhöhen", throwIfNotFound: true);
+            m_BrailleSettings_Zeichenabstandverkleinern = m_BrailleSettings.FindAction("Zeichenabstand verkleinern", throwIfNotFound: true);
+            m_BrailleSettings_Zeilenabstanderhöhen = m_BrailleSettings.FindAction("Zeilenabstand erhöhen", throwIfNotFound: true);
+            m_BrailleSettings_Zeilenabstandverkleinern = m_BrailleSettings.FindAction("Zeilenabstand verkleinern", throwIfNotFound: true);
             // Navigation
             m_Navigation = asset.FindActionMap("Navigation", throwIfNotFound: true);
-            m_Navigation_next = m_Navigation.FindAction("next", throwIfNotFound: true);
-            m_Navigation_prev = m_Navigation.FindAction("prev", throwIfNotFound: true);
-            m_Navigation_answer0 = m_Navigation.FindAction("answer0", throwIfNotFound: true);
-            m_Navigation_answer1 = m_Navigation.FindAction("answer1", throwIfNotFound: true);
-            m_Navigation_answer2 = m_Navigation.FindAction("answer2", throwIfNotFound: true);
-            m_Navigation_answer3 = m_Navigation.FindAction("answer3", throwIfNotFound: true);
-            m_Navigation_answer4 = m_Navigation.FindAction("answer4", throwIfNotFound: true);
-            m_Navigation_answer5 = m_Navigation.FindAction("answer5", throwIfNotFound: true);
-            m_Navigation_confirm = m_Navigation.FindAction("confirm", throwIfNotFound: true);
-            m_Navigation_SwitchUILayer = m_Navigation.FindAction("Switch UI Layer", throwIfNotFound: true);
+            m_Navigation_weiter = m_Navigation.FindAction("weiter", throwIfNotFound: true);
+            m_Navigation_zurück = m_Navigation.FindAction("zurück", throwIfNotFound: true);
+            m_Navigation_antwort1 = m_Navigation.FindAction("antwort 1", throwIfNotFound: true);
+            m_Navigation_antwort2 = m_Navigation.FindAction("antwort 2", throwIfNotFound: true);
+            m_Navigation_antwort3 = m_Navigation.FindAction("antwort 3", throwIfNotFound: true);
+            m_Navigation_antwort4 = m_Navigation.FindAction("antwort 4", throwIfNotFound: true);
+            m_Navigation_antwort5 = m_Navigation.FindAction("antwort 5", throwIfNotFound: true);
+            m_Navigation_antwort6 = m_Navigation.FindAction("antwort 6", throwIfNotFound: true);
+            m_Navigation_bestätigen = m_Navigation.FindAction("bestätigen", throwIfNotFound: true);
+            m_Navigation_UILayerwechseln = m_Navigation.FindAction("UI Layer wechseln", throwIfNotFound: true);
             // TutorialNavigation
             m_TutorialNavigation = asset.FindActionMap("TutorialNavigation", throwIfNotFound: true);
-            m_TutorialNavigation_next = m_TutorialNavigation.FindAction("next", throwIfNotFound: true);
-            m_TutorialNavigation_prev = m_TutorialNavigation.FindAction("prev", throwIfNotFound: true);
-            m_TutorialNavigation_confirm = m_TutorialNavigation.FindAction("confirm", throwIfNotFound: true);
-            m_TutorialNavigation_SwitchUILayer = m_TutorialNavigation.FindAction("Switch UI Layer", throwIfNotFound: true);
+            m_TutorialNavigation_weiter = m_TutorialNavigation.FindAction("weiter", throwIfNotFound: true);
+            m_TutorialNavigation_zurück = m_TutorialNavigation.FindAction("zurück", throwIfNotFound: true);
+            m_TutorialNavigation_bestätigen = m_TutorialNavigation.FindAction("bestätigen", throwIfNotFound: true);
+            m_TutorialNavigation_UILayerwechseln = m_TutorialNavigation.FindAction("UI Layer wechseln", throwIfNotFound: true);
             m_TutorialNavigation_escape = m_TutorialNavigation.FindAction("escape", throwIfNotFound: true);
             // BrailleKeyboard
             m_BrailleKeyboard = asset.FindActionMap("BrailleKeyboard", throwIfNotFound: true);
@@ -2222,7 +2222,7 @@ namespace IO
             m_BrailleKeyboard_Apostrophe = m_BrailleKeyboard.FindAction("Apostrophe", throwIfNotFound: true);
             // Constants
             m_Constants = asset.FindActionMap("Constants", throwIfNotFound: true);
-            m_Constants_reset = m_Constants.FindAction("reset", throwIfNotFound: true);
+            m_Constants_Tastenbelegungzurücksetzen = m_Constants.FindAction("Tastenbelegung zurücksetzen", throwIfNotFound: true);
             m_Constants_any = m_Constants.FindAction("any", throwIfNotFound: true);
         }
 
@@ -2309,14 +2309,14 @@ namespace IO
         // PerkinsBrailer
         private readonly InputActionMap m_PerkinsBrailer;
         private List<IPerkinsBrailerActions> m_PerkinsBrailerActionsCallbackInterfaces = new List<IPerkinsBrailerActions>();
-        private readonly InputAction m_PerkinsBrailer_Dot0;
-        private readonly InputAction m_PerkinsBrailer_Dot1;
-        private readonly InputAction m_PerkinsBrailer_Dot2;
-        private readonly InputAction m_PerkinsBrailer_Dot3;
-        private readonly InputAction m_PerkinsBrailer_Dot4;
-        private readonly InputAction m_PerkinsBrailer_Dot5;
-        private readonly InputAction m_PerkinsBrailer_Space;
-        private readonly InputAction m_PerkinsBrailer_Delete;
+        private readonly InputAction m_PerkinsBrailer_Punkt1;
+        private readonly InputAction m_PerkinsBrailer_Punkt2;
+        private readonly InputAction m_PerkinsBrailer_Punkt3;
+        private readonly InputAction m_PerkinsBrailer_Punkt4;
+        private readonly InputAction m_PerkinsBrailer_Punkt5;
+        private readonly InputAction m_PerkinsBrailer_Punkt6;
+        private readonly InputAction m_PerkinsBrailer_Leertaste;
+        private readonly InputAction m_PerkinsBrailer_Rücktaste;
         /// <summary>
         /// Provides access to input actions defined in input action map "PerkinsBrailer".
         /// </summary>
@@ -2329,37 +2329,37 @@ namespace IO
             /// </summary>
             public PerkinsBrailerActions(@GameActions wrapper) { m_Wrapper = wrapper; }
             /// <summary>
-            /// Provides access to the underlying input action "PerkinsBrailer/Dot0".
+            /// Provides access to the underlying input action "PerkinsBrailer/Punkt1".
             /// </summary>
-            public InputAction @Dot0 => m_Wrapper.m_PerkinsBrailer_Dot0;
+            public InputAction @Punkt1 => m_Wrapper.m_PerkinsBrailer_Punkt1;
             /// <summary>
-            /// Provides access to the underlying input action "PerkinsBrailer/Dot1".
+            /// Provides access to the underlying input action "PerkinsBrailer/Punkt2".
             /// </summary>
-            public InputAction @Dot1 => m_Wrapper.m_PerkinsBrailer_Dot1;
+            public InputAction @Punkt2 => m_Wrapper.m_PerkinsBrailer_Punkt2;
             /// <summary>
-            /// Provides access to the underlying input action "PerkinsBrailer/Dot2".
+            /// Provides access to the underlying input action "PerkinsBrailer/Punkt3".
             /// </summary>
-            public InputAction @Dot2 => m_Wrapper.m_PerkinsBrailer_Dot2;
+            public InputAction @Punkt3 => m_Wrapper.m_PerkinsBrailer_Punkt3;
             /// <summary>
-            /// Provides access to the underlying input action "PerkinsBrailer/Dot3".
+            /// Provides access to the underlying input action "PerkinsBrailer/Punkt4".
             /// </summary>
-            public InputAction @Dot3 => m_Wrapper.m_PerkinsBrailer_Dot3;
+            public InputAction @Punkt4 => m_Wrapper.m_PerkinsBrailer_Punkt4;
             /// <summary>
-            /// Provides access to the underlying input action "PerkinsBrailer/Dot4".
+            /// Provides access to the underlying input action "PerkinsBrailer/Punkt5".
             /// </summary>
-            public InputAction @Dot4 => m_Wrapper.m_PerkinsBrailer_Dot4;
+            public InputAction @Punkt5 => m_Wrapper.m_PerkinsBrailer_Punkt5;
             /// <summary>
-            /// Provides access to the underlying input action "PerkinsBrailer/Dot5".
+            /// Provides access to the underlying input action "PerkinsBrailer/Punkt6".
             /// </summary>
-            public InputAction @Dot5 => m_Wrapper.m_PerkinsBrailer_Dot5;
+            public InputAction @Punkt6 => m_Wrapper.m_PerkinsBrailer_Punkt6;
             /// <summary>
-            /// Provides access to the underlying input action "PerkinsBrailer/Space".
+            /// Provides access to the underlying input action "PerkinsBrailer/Leertaste".
             /// </summary>
-            public InputAction @Space => m_Wrapper.m_PerkinsBrailer_Space;
+            public InputAction @Leertaste => m_Wrapper.m_PerkinsBrailer_Leertaste;
             /// <summary>
-            /// Provides access to the underlying input action "PerkinsBrailer/Delete".
+            /// Provides access to the underlying input action "PerkinsBrailer/Rücktaste".
             /// </summary>
-            public InputAction @Delete => m_Wrapper.m_PerkinsBrailer_Delete;
+            public InputAction @Rücktaste => m_Wrapper.m_PerkinsBrailer_Rücktaste;
             /// <summary>
             /// Provides access to the underlying input action map instance.
             /// </summary>
@@ -2386,30 +2386,30 @@ namespace IO
             {
                 if (instance == null || m_Wrapper.m_PerkinsBrailerActionsCallbackInterfaces.Contains(instance)) return;
                 m_Wrapper.m_PerkinsBrailerActionsCallbackInterfaces.Add(instance);
-                @Dot0.started += instance.OnDot0;
-                @Dot0.performed += instance.OnDot0;
-                @Dot0.canceled += instance.OnDot0;
-                @Dot1.started += instance.OnDot1;
-                @Dot1.performed += instance.OnDot1;
-                @Dot1.canceled += instance.OnDot1;
-                @Dot2.started += instance.OnDot2;
-                @Dot2.performed += instance.OnDot2;
-                @Dot2.canceled += instance.OnDot2;
-                @Dot3.started += instance.OnDot3;
-                @Dot3.performed += instance.OnDot3;
-                @Dot3.canceled += instance.OnDot3;
-                @Dot4.started += instance.OnDot4;
-                @Dot4.performed += instance.OnDot4;
-                @Dot4.canceled += instance.OnDot4;
-                @Dot5.started += instance.OnDot5;
-                @Dot5.performed += instance.OnDot5;
-                @Dot5.canceled += instance.OnDot5;
-                @Space.started += instance.OnSpace;
-                @Space.performed += instance.OnSpace;
-                @Space.canceled += instance.OnSpace;
-                @Delete.started += instance.OnDelete;
-                @Delete.performed += instance.OnDelete;
-                @Delete.canceled += instance.OnDelete;
+                @Punkt1.started += instance.OnPunkt1;
+                @Punkt1.performed += instance.OnPunkt1;
+                @Punkt1.canceled += instance.OnPunkt1;
+                @Punkt2.started += instance.OnPunkt2;
+                @Punkt2.performed += instance.OnPunkt2;
+                @Punkt2.canceled += instance.OnPunkt2;
+                @Punkt3.started += instance.OnPunkt3;
+                @Punkt3.performed += instance.OnPunkt3;
+                @Punkt3.canceled += instance.OnPunkt3;
+                @Punkt4.started += instance.OnPunkt4;
+                @Punkt4.performed += instance.OnPunkt4;
+                @Punkt4.canceled += instance.OnPunkt4;
+                @Punkt5.started += instance.OnPunkt5;
+                @Punkt5.performed += instance.OnPunkt5;
+                @Punkt5.canceled += instance.OnPunkt5;
+                @Punkt6.started += instance.OnPunkt6;
+                @Punkt6.performed += instance.OnPunkt6;
+                @Punkt6.canceled += instance.OnPunkt6;
+                @Leertaste.started += instance.OnLeertaste;
+                @Leertaste.performed += instance.OnLeertaste;
+                @Leertaste.canceled += instance.OnLeertaste;
+                @Rücktaste.started += instance.OnRücktaste;
+                @Rücktaste.performed += instance.OnRücktaste;
+                @Rücktaste.canceled += instance.OnRücktaste;
             }
 
             /// <summary>
@@ -2421,30 +2421,30 @@ namespace IO
             /// <seealso cref="PerkinsBrailerActions" />
             private void UnregisterCallbacks(IPerkinsBrailerActions instance)
             {
-                @Dot0.started -= instance.OnDot0;
-                @Dot0.performed -= instance.OnDot0;
-                @Dot0.canceled -= instance.OnDot0;
-                @Dot1.started -= instance.OnDot1;
-                @Dot1.performed -= instance.OnDot1;
-                @Dot1.canceled -= instance.OnDot1;
-                @Dot2.started -= instance.OnDot2;
-                @Dot2.performed -= instance.OnDot2;
-                @Dot2.canceled -= instance.OnDot2;
-                @Dot3.started -= instance.OnDot3;
-                @Dot3.performed -= instance.OnDot3;
-                @Dot3.canceled -= instance.OnDot3;
-                @Dot4.started -= instance.OnDot4;
-                @Dot4.performed -= instance.OnDot4;
-                @Dot4.canceled -= instance.OnDot4;
-                @Dot5.started -= instance.OnDot5;
-                @Dot5.performed -= instance.OnDot5;
-                @Dot5.canceled -= instance.OnDot5;
-                @Space.started -= instance.OnSpace;
-                @Space.performed -= instance.OnSpace;
-                @Space.canceled -= instance.OnSpace;
-                @Delete.started -= instance.OnDelete;
-                @Delete.performed -= instance.OnDelete;
-                @Delete.canceled -= instance.OnDelete;
+                @Punkt1.started -= instance.OnPunkt1;
+                @Punkt1.performed -= instance.OnPunkt1;
+                @Punkt1.canceled -= instance.OnPunkt1;
+                @Punkt2.started -= instance.OnPunkt2;
+                @Punkt2.performed -= instance.OnPunkt2;
+                @Punkt2.canceled -= instance.OnPunkt2;
+                @Punkt3.started -= instance.OnPunkt3;
+                @Punkt3.performed -= instance.OnPunkt3;
+                @Punkt3.canceled -= instance.OnPunkt3;
+                @Punkt4.started -= instance.OnPunkt4;
+                @Punkt4.performed -= instance.OnPunkt4;
+                @Punkt4.canceled -= instance.OnPunkt4;
+                @Punkt5.started -= instance.OnPunkt5;
+                @Punkt5.performed -= instance.OnPunkt5;
+                @Punkt5.canceled -= instance.OnPunkt5;
+                @Punkt6.started -= instance.OnPunkt6;
+                @Punkt6.performed -= instance.OnPunkt6;
+                @Punkt6.canceled -= instance.OnPunkt6;
+                @Leertaste.started -= instance.OnLeertaste;
+                @Leertaste.performed -= instance.OnLeertaste;
+                @Leertaste.canceled -= instance.OnLeertaste;
+                @Rücktaste.started -= instance.OnRücktaste;
+                @Rücktaste.performed -= instance.OnRücktaste;
+                @Rücktaste.canceled -= instance.OnRücktaste;
             }
 
             /// <summary>
@@ -2482,14 +2482,14 @@ namespace IO
         // BrailleSettings
         private readonly InputActionMap m_BrailleSettings;
         private List<IBrailleSettingsActions> m_BrailleSettingsActionsCallbackInterfaces = new List<IBrailleSettingsActions>();
-        private readonly InputAction m_BrailleSettings_BrailleSizeUp;
-        private readonly InputAction m_BrailleSettings_BrailleSizeDown;
-        private readonly InputAction m_BrailleSettings_DotSizeUp;
-        private readonly InputAction m_BrailleSettings_DotSizeDown;
-        private readonly InputAction m_BrailleSettings_BrailleSpacingUp;
-        private readonly InputAction m_BrailleSettings_BrailleSpacingDown;
-        private readonly InputAction m_BrailleSettings_LineSpacingUp;
-        private readonly InputAction m_BrailleSettings_LineSpacingDown;
+        private readonly InputAction m_BrailleSettings_Schriftgrößeerhöhen;
+        private readonly InputAction m_BrailleSettings_Schriftgrößeverkleinern;
+        private readonly InputAction m_BrailleSettings_Punktgrößeerhöhen;
+        private readonly InputAction m_BrailleSettings_Punktgrößeverkleinern;
+        private readonly InputAction m_BrailleSettings_Zeichenabstanderhöhen;
+        private readonly InputAction m_BrailleSettings_Zeichenabstandverkleinern;
+        private readonly InputAction m_BrailleSettings_Zeilenabstanderhöhen;
+        private readonly InputAction m_BrailleSettings_Zeilenabstandverkleinern;
         /// <summary>
         /// Provides access to input actions defined in input action map "BrailleSettings".
         /// </summary>
@@ -2502,37 +2502,37 @@ namespace IO
             /// </summary>
             public BrailleSettingsActions(@GameActions wrapper) { m_Wrapper = wrapper; }
             /// <summary>
-            /// Provides access to the underlying input action "BrailleSettings/BrailleSizeUp".
+            /// Provides access to the underlying input action "BrailleSettings/Schriftgrößeerhöhen".
             /// </summary>
-            public InputAction @BrailleSizeUp => m_Wrapper.m_BrailleSettings_BrailleSizeUp;
+            public InputAction @Schriftgrößeerhöhen => m_Wrapper.m_BrailleSettings_Schriftgrößeerhöhen;
             /// <summary>
-            /// Provides access to the underlying input action "BrailleSettings/BrailleSizeDown".
+            /// Provides access to the underlying input action "BrailleSettings/Schriftgrößeverkleinern".
             /// </summary>
-            public InputAction @BrailleSizeDown => m_Wrapper.m_BrailleSettings_BrailleSizeDown;
+            public InputAction @Schriftgrößeverkleinern => m_Wrapper.m_BrailleSettings_Schriftgrößeverkleinern;
             /// <summary>
-            /// Provides access to the underlying input action "BrailleSettings/DotSizeUp".
+            /// Provides access to the underlying input action "BrailleSettings/Punktgrößeerhöhen".
             /// </summary>
-            public InputAction @DotSizeUp => m_Wrapper.m_BrailleSettings_DotSizeUp;
+            public InputAction @Punktgrößeerhöhen => m_Wrapper.m_BrailleSettings_Punktgrößeerhöhen;
             /// <summary>
-            /// Provides access to the underlying input action "BrailleSettings/DotSizeDown".
+            /// Provides access to the underlying input action "BrailleSettings/Punktgrößeverkleinern".
             /// </summary>
-            public InputAction @DotSizeDown => m_Wrapper.m_BrailleSettings_DotSizeDown;
+            public InputAction @Punktgrößeverkleinern => m_Wrapper.m_BrailleSettings_Punktgrößeverkleinern;
             /// <summary>
-            /// Provides access to the underlying input action "BrailleSettings/BrailleSpacingUp".
+            /// Provides access to the underlying input action "BrailleSettings/Zeichenabstanderhöhen".
             /// </summary>
-            public InputAction @BrailleSpacingUp => m_Wrapper.m_BrailleSettings_BrailleSpacingUp;
+            public InputAction @Zeichenabstanderhöhen => m_Wrapper.m_BrailleSettings_Zeichenabstanderhöhen;
             /// <summary>
-            /// Provides access to the underlying input action "BrailleSettings/BrailleSpacingDown".
+            /// Provides access to the underlying input action "BrailleSettings/Zeichenabstandverkleinern".
             /// </summary>
-            public InputAction @BrailleSpacingDown => m_Wrapper.m_BrailleSettings_BrailleSpacingDown;
+            public InputAction @Zeichenabstandverkleinern => m_Wrapper.m_BrailleSettings_Zeichenabstandverkleinern;
             /// <summary>
-            /// Provides access to the underlying input action "BrailleSettings/LineSpacingUp".
+            /// Provides access to the underlying input action "BrailleSettings/Zeilenabstanderhöhen".
             /// </summary>
-            public InputAction @LineSpacingUp => m_Wrapper.m_BrailleSettings_LineSpacingUp;
+            public InputAction @Zeilenabstanderhöhen => m_Wrapper.m_BrailleSettings_Zeilenabstanderhöhen;
             /// <summary>
-            /// Provides access to the underlying input action "BrailleSettings/LineSpacingDown".
+            /// Provides access to the underlying input action "BrailleSettings/Zeilenabstandverkleinern".
             /// </summary>
-            public InputAction @LineSpacingDown => m_Wrapper.m_BrailleSettings_LineSpacingDown;
+            public InputAction @Zeilenabstandverkleinern => m_Wrapper.m_BrailleSettings_Zeilenabstandverkleinern;
             /// <summary>
             /// Provides access to the underlying input action map instance.
             /// </summary>
@@ -2559,30 +2559,30 @@ namespace IO
             {
                 if (instance == null || m_Wrapper.m_BrailleSettingsActionsCallbackInterfaces.Contains(instance)) return;
                 m_Wrapper.m_BrailleSettingsActionsCallbackInterfaces.Add(instance);
-                @BrailleSizeUp.started += instance.OnBrailleSizeUp;
-                @BrailleSizeUp.performed += instance.OnBrailleSizeUp;
-                @BrailleSizeUp.canceled += instance.OnBrailleSizeUp;
-                @BrailleSizeDown.started += instance.OnBrailleSizeDown;
-                @BrailleSizeDown.performed += instance.OnBrailleSizeDown;
-                @BrailleSizeDown.canceled += instance.OnBrailleSizeDown;
-                @DotSizeUp.started += instance.OnDotSizeUp;
-                @DotSizeUp.performed += instance.OnDotSizeUp;
-                @DotSizeUp.canceled += instance.OnDotSizeUp;
-                @DotSizeDown.started += instance.OnDotSizeDown;
-                @DotSizeDown.performed += instance.OnDotSizeDown;
-                @DotSizeDown.canceled += instance.OnDotSizeDown;
-                @BrailleSpacingUp.started += instance.OnBrailleSpacingUp;
-                @BrailleSpacingUp.performed += instance.OnBrailleSpacingUp;
-                @BrailleSpacingUp.canceled += instance.OnBrailleSpacingUp;
-                @BrailleSpacingDown.started += instance.OnBrailleSpacingDown;
-                @BrailleSpacingDown.performed += instance.OnBrailleSpacingDown;
-                @BrailleSpacingDown.canceled += instance.OnBrailleSpacingDown;
-                @LineSpacingUp.started += instance.OnLineSpacingUp;
-                @LineSpacingUp.performed += instance.OnLineSpacingUp;
-                @LineSpacingUp.canceled += instance.OnLineSpacingUp;
-                @LineSpacingDown.started += instance.OnLineSpacingDown;
-                @LineSpacingDown.performed += instance.OnLineSpacingDown;
-                @LineSpacingDown.canceled += instance.OnLineSpacingDown;
+                @Schriftgrößeerhöhen.started += instance.OnSchriftgrößeerhöhen;
+                @Schriftgrößeerhöhen.performed += instance.OnSchriftgrößeerhöhen;
+                @Schriftgrößeerhöhen.canceled += instance.OnSchriftgrößeerhöhen;
+                @Schriftgrößeverkleinern.started += instance.OnSchriftgrößeverkleinern;
+                @Schriftgrößeverkleinern.performed += instance.OnSchriftgrößeverkleinern;
+                @Schriftgrößeverkleinern.canceled += instance.OnSchriftgrößeverkleinern;
+                @Punktgrößeerhöhen.started += instance.OnPunktgrößeerhöhen;
+                @Punktgrößeerhöhen.performed += instance.OnPunktgrößeerhöhen;
+                @Punktgrößeerhöhen.canceled += instance.OnPunktgrößeerhöhen;
+                @Punktgrößeverkleinern.started += instance.OnPunktgrößeverkleinern;
+                @Punktgrößeverkleinern.performed += instance.OnPunktgrößeverkleinern;
+                @Punktgrößeverkleinern.canceled += instance.OnPunktgrößeverkleinern;
+                @Zeichenabstanderhöhen.started += instance.OnZeichenabstanderhöhen;
+                @Zeichenabstanderhöhen.performed += instance.OnZeichenabstanderhöhen;
+                @Zeichenabstanderhöhen.canceled += instance.OnZeichenabstanderhöhen;
+                @Zeichenabstandverkleinern.started += instance.OnZeichenabstandverkleinern;
+                @Zeichenabstandverkleinern.performed += instance.OnZeichenabstandverkleinern;
+                @Zeichenabstandverkleinern.canceled += instance.OnZeichenabstandverkleinern;
+                @Zeilenabstanderhöhen.started += instance.OnZeilenabstanderhöhen;
+                @Zeilenabstanderhöhen.performed += instance.OnZeilenabstanderhöhen;
+                @Zeilenabstanderhöhen.canceled += instance.OnZeilenabstanderhöhen;
+                @Zeilenabstandverkleinern.started += instance.OnZeilenabstandverkleinern;
+                @Zeilenabstandverkleinern.performed += instance.OnZeilenabstandverkleinern;
+                @Zeilenabstandverkleinern.canceled += instance.OnZeilenabstandverkleinern;
             }
 
             /// <summary>
@@ -2594,30 +2594,30 @@ namespace IO
             /// <seealso cref="BrailleSettingsActions" />
             private void UnregisterCallbacks(IBrailleSettingsActions instance)
             {
-                @BrailleSizeUp.started -= instance.OnBrailleSizeUp;
-                @BrailleSizeUp.performed -= instance.OnBrailleSizeUp;
-                @BrailleSizeUp.canceled -= instance.OnBrailleSizeUp;
-                @BrailleSizeDown.started -= instance.OnBrailleSizeDown;
-                @BrailleSizeDown.performed -= instance.OnBrailleSizeDown;
-                @BrailleSizeDown.canceled -= instance.OnBrailleSizeDown;
-                @DotSizeUp.started -= instance.OnDotSizeUp;
-                @DotSizeUp.performed -= instance.OnDotSizeUp;
-                @DotSizeUp.canceled -= instance.OnDotSizeUp;
-                @DotSizeDown.started -= instance.OnDotSizeDown;
-                @DotSizeDown.performed -= instance.OnDotSizeDown;
-                @DotSizeDown.canceled -= instance.OnDotSizeDown;
-                @BrailleSpacingUp.started -= instance.OnBrailleSpacingUp;
-                @BrailleSpacingUp.performed -= instance.OnBrailleSpacingUp;
-                @BrailleSpacingUp.canceled -= instance.OnBrailleSpacingUp;
-                @BrailleSpacingDown.started -= instance.OnBrailleSpacingDown;
-                @BrailleSpacingDown.performed -= instance.OnBrailleSpacingDown;
-                @BrailleSpacingDown.canceled -= instance.OnBrailleSpacingDown;
-                @LineSpacingUp.started -= instance.OnLineSpacingUp;
-                @LineSpacingUp.performed -= instance.OnLineSpacingUp;
-                @LineSpacingUp.canceled -= instance.OnLineSpacingUp;
-                @LineSpacingDown.started -= instance.OnLineSpacingDown;
-                @LineSpacingDown.performed -= instance.OnLineSpacingDown;
-                @LineSpacingDown.canceled -= instance.OnLineSpacingDown;
+                @Schriftgrößeerhöhen.started -= instance.OnSchriftgrößeerhöhen;
+                @Schriftgrößeerhöhen.performed -= instance.OnSchriftgrößeerhöhen;
+                @Schriftgrößeerhöhen.canceled -= instance.OnSchriftgrößeerhöhen;
+                @Schriftgrößeverkleinern.started -= instance.OnSchriftgrößeverkleinern;
+                @Schriftgrößeverkleinern.performed -= instance.OnSchriftgrößeverkleinern;
+                @Schriftgrößeverkleinern.canceled -= instance.OnSchriftgrößeverkleinern;
+                @Punktgrößeerhöhen.started -= instance.OnPunktgrößeerhöhen;
+                @Punktgrößeerhöhen.performed -= instance.OnPunktgrößeerhöhen;
+                @Punktgrößeerhöhen.canceled -= instance.OnPunktgrößeerhöhen;
+                @Punktgrößeverkleinern.started -= instance.OnPunktgrößeverkleinern;
+                @Punktgrößeverkleinern.performed -= instance.OnPunktgrößeverkleinern;
+                @Punktgrößeverkleinern.canceled -= instance.OnPunktgrößeverkleinern;
+                @Zeichenabstanderhöhen.started -= instance.OnZeichenabstanderhöhen;
+                @Zeichenabstanderhöhen.performed -= instance.OnZeichenabstanderhöhen;
+                @Zeichenabstanderhöhen.canceled -= instance.OnZeichenabstanderhöhen;
+                @Zeichenabstandverkleinern.started -= instance.OnZeichenabstandverkleinern;
+                @Zeichenabstandverkleinern.performed -= instance.OnZeichenabstandverkleinern;
+                @Zeichenabstandverkleinern.canceled -= instance.OnZeichenabstandverkleinern;
+                @Zeilenabstanderhöhen.started -= instance.OnZeilenabstanderhöhen;
+                @Zeilenabstanderhöhen.performed -= instance.OnZeilenabstanderhöhen;
+                @Zeilenabstanderhöhen.canceled -= instance.OnZeilenabstanderhöhen;
+                @Zeilenabstandverkleinern.started -= instance.OnZeilenabstandverkleinern;
+                @Zeilenabstandverkleinern.performed -= instance.OnZeilenabstandverkleinern;
+                @Zeilenabstandverkleinern.canceled -= instance.OnZeilenabstandverkleinern;
             }
 
             /// <summary>
@@ -2655,16 +2655,16 @@ namespace IO
         // Navigation
         private readonly InputActionMap m_Navigation;
         private List<INavigationActions> m_NavigationActionsCallbackInterfaces = new List<INavigationActions>();
-        private readonly InputAction m_Navigation_next;
-        private readonly InputAction m_Navigation_prev;
-        private readonly InputAction m_Navigation_answer0;
-        private readonly InputAction m_Navigation_answer1;
-        private readonly InputAction m_Navigation_answer2;
-        private readonly InputAction m_Navigation_answer3;
-        private readonly InputAction m_Navigation_answer4;
-        private readonly InputAction m_Navigation_answer5;
-        private readonly InputAction m_Navigation_confirm;
-        private readonly InputAction m_Navigation_SwitchUILayer;
+        private readonly InputAction m_Navigation_weiter;
+        private readonly InputAction m_Navigation_zurück;
+        private readonly InputAction m_Navigation_antwort1;
+        private readonly InputAction m_Navigation_antwort2;
+        private readonly InputAction m_Navigation_antwort3;
+        private readonly InputAction m_Navigation_antwort4;
+        private readonly InputAction m_Navigation_antwort5;
+        private readonly InputAction m_Navigation_antwort6;
+        private readonly InputAction m_Navigation_bestätigen;
+        private readonly InputAction m_Navigation_UILayerwechseln;
         /// <summary>
         /// Provides access to input actions defined in input action map "Navigation".
         /// </summary>
@@ -2677,45 +2677,45 @@ namespace IO
             /// </summary>
             public NavigationActions(@GameActions wrapper) { m_Wrapper = wrapper; }
             /// <summary>
-            /// Provides access to the underlying input action "Navigation/next".
+            /// Provides access to the underlying input action "Navigation/weiter".
             /// </summary>
-            public InputAction @next => m_Wrapper.m_Navigation_next;
+            public InputAction @weiter => m_Wrapper.m_Navigation_weiter;
             /// <summary>
-            /// Provides access to the underlying input action "Navigation/prev".
+            /// Provides access to the underlying input action "Navigation/zurück".
             /// </summary>
-            public InputAction @prev => m_Wrapper.m_Navigation_prev;
+            public InputAction @zurück => m_Wrapper.m_Navigation_zurück;
             /// <summary>
-            /// Provides access to the underlying input action "Navigation/answer0".
+            /// Provides access to the underlying input action "Navigation/antwort1".
             /// </summary>
-            public InputAction @answer0 => m_Wrapper.m_Navigation_answer0;
+            public InputAction @antwort1 => m_Wrapper.m_Navigation_antwort1;
             /// <summary>
-            /// Provides access to the underlying input action "Navigation/answer1".
+            /// Provides access to the underlying input action "Navigation/antwort2".
             /// </summary>
-            public InputAction @answer1 => m_Wrapper.m_Navigation_answer1;
+            public InputAction @antwort2 => m_Wrapper.m_Navigation_antwort2;
             /// <summary>
-            /// Provides access to the underlying input action "Navigation/answer2".
+            /// Provides access to the underlying input action "Navigation/antwort3".
             /// </summary>
-            public InputAction @answer2 => m_Wrapper.m_Navigation_answer2;
+            public InputAction @antwort3 => m_Wrapper.m_Navigation_antwort3;
             /// <summary>
-            /// Provides access to the underlying input action "Navigation/answer3".
+            /// Provides access to the underlying input action "Navigation/antwort4".
             /// </summary>
-            public InputAction @answer3 => m_Wrapper.m_Navigation_answer3;
+            public InputAction @antwort4 => m_Wrapper.m_Navigation_antwort4;
             /// <summary>
-            /// Provides access to the underlying input action "Navigation/answer4".
+            /// Provides access to the underlying input action "Navigation/antwort5".
             /// </summary>
-            public InputAction @answer4 => m_Wrapper.m_Navigation_answer4;
+            public InputAction @antwort5 => m_Wrapper.m_Navigation_antwort5;
             /// <summary>
-            /// Provides access to the underlying input action "Navigation/answer5".
+            /// Provides access to the underlying input action "Navigation/antwort6".
             /// </summary>
-            public InputAction @answer5 => m_Wrapper.m_Navigation_answer5;
+            public InputAction @antwort6 => m_Wrapper.m_Navigation_antwort6;
             /// <summary>
-            /// Provides access to the underlying input action "Navigation/confirm".
+            /// Provides access to the underlying input action "Navigation/bestätigen".
             /// </summary>
-            public InputAction @confirm => m_Wrapper.m_Navigation_confirm;
+            public InputAction @bestätigen => m_Wrapper.m_Navigation_bestätigen;
             /// <summary>
-            /// Provides access to the underlying input action "Navigation/SwitchUILayer".
+            /// Provides access to the underlying input action "Navigation/UILayerwechseln".
             /// </summary>
-            public InputAction @SwitchUILayer => m_Wrapper.m_Navigation_SwitchUILayer;
+            public InputAction @UILayerwechseln => m_Wrapper.m_Navigation_UILayerwechseln;
             /// <summary>
             /// Provides access to the underlying input action map instance.
             /// </summary>
@@ -2742,36 +2742,36 @@ namespace IO
             {
                 if (instance == null || m_Wrapper.m_NavigationActionsCallbackInterfaces.Contains(instance)) return;
                 m_Wrapper.m_NavigationActionsCallbackInterfaces.Add(instance);
-                @next.started += instance.OnNext;
-                @next.performed += instance.OnNext;
-                @next.canceled += instance.OnNext;
-                @prev.started += instance.OnPrev;
-                @prev.performed += instance.OnPrev;
-                @prev.canceled += instance.OnPrev;
-                @answer0.started += instance.OnAnswer0;
-                @answer0.performed += instance.OnAnswer0;
-                @answer0.canceled += instance.OnAnswer0;
-                @answer1.started += instance.OnAnswer1;
-                @answer1.performed += instance.OnAnswer1;
-                @answer1.canceled += instance.OnAnswer1;
-                @answer2.started += instance.OnAnswer2;
-                @answer2.performed += instance.OnAnswer2;
-                @answer2.canceled += instance.OnAnswer2;
-                @answer3.started += instance.OnAnswer3;
-                @answer3.performed += instance.OnAnswer3;
-                @answer3.canceled += instance.OnAnswer3;
-                @answer4.started += instance.OnAnswer4;
-                @answer4.performed += instance.OnAnswer4;
-                @answer4.canceled += instance.OnAnswer4;
-                @answer5.started += instance.OnAnswer5;
-                @answer5.performed += instance.OnAnswer5;
-                @answer5.canceled += instance.OnAnswer5;
-                @confirm.started += instance.OnConfirm;
-                @confirm.performed += instance.OnConfirm;
-                @confirm.canceled += instance.OnConfirm;
-                @SwitchUILayer.started += instance.OnSwitchUILayer;
-                @SwitchUILayer.performed += instance.OnSwitchUILayer;
-                @SwitchUILayer.canceled += instance.OnSwitchUILayer;
+                @weiter.started += instance.OnWeiter;
+                @weiter.performed += instance.OnWeiter;
+                @weiter.canceled += instance.OnWeiter;
+                @zurück.started += instance.OnZurück;
+                @zurück.performed += instance.OnZurück;
+                @zurück.canceled += instance.OnZurück;
+                @antwort1.started += instance.OnAntwort1;
+                @antwort1.performed += instance.OnAntwort1;
+                @antwort1.canceled += instance.OnAntwort1;
+                @antwort2.started += instance.OnAntwort2;
+                @antwort2.performed += instance.OnAntwort2;
+                @antwort2.canceled += instance.OnAntwort2;
+                @antwort3.started += instance.OnAntwort3;
+                @antwort3.performed += instance.OnAntwort3;
+                @antwort3.canceled += instance.OnAntwort3;
+                @antwort4.started += instance.OnAntwort4;
+                @antwort4.performed += instance.OnAntwort4;
+                @antwort4.canceled += instance.OnAntwort4;
+                @antwort5.started += instance.OnAntwort5;
+                @antwort5.performed += instance.OnAntwort5;
+                @antwort5.canceled += instance.OnAntwort5;
+                @antwort6.started += instance.OnAntwort6;
+                @antwort6.performed += instance.OnAntwort6;
+                @antwort6.canceled += instance.OnAntwort6;
+                @bestätigen.started += instance.OnBestätigen;
+                @bestätigen.performed += instance.OnBestätigen;
+                @bestätigen.canceled += instance.OnBestätigen;
+                @UILayerwechseln.started += instance.OnUILayerwechseln;
+                @UILayerwechseln.performed += instance.OnUILayerwechseln;
+                @UILayerwechseln.canceled += instance.OnUILayerwechseln;
             }
 
             /// <summary>
@@ -2783,36 +2783,36 @@ namespace IO
             /// <seealso cref="NavigationActions" />
             private void UnregisterCallbacks(INavigationActions instance)
             {
-                @next.started -= instance.OnNext;
-                @next.performed -= instance.OnNext;
-                @next.canceled -= instance.OnNext;
-                @prev.started -= instance.OnPrev;
-                @prev.performed -= instance.OnPrev;
-                @prev.canceled -= instance.OnPrev;
-                @answer0.started -= instance.OnAnswer0;
-                @answer0.performed -= instance.OnAnswer0;
-                @answer0.canceled -= instance.OnAnswer0;
-                @answer1.started -= instance.OnAnswer1;
-                @answer1.performed -= instance.OnAnswer1;
-                @answer1.canceled -= instance.OnAnswer1;
-                @answer2.started -= instance.OnAnswer2;
-                @answer2.performed -= instance.OnAnswer2;
-                @answer2.canceled -= instance.OnAnswer2;
-                @answer3.started -= instance.OnAnswer3;
-                @answer3.performed -= instance.OnAnswer3;
-                @answer3.canceled -= instance.OnAnswer3;
-                @answer4.started -= instance.OnAnswer4;
-                @answer4.performed -= instance.OnAnswer4;
-                @answer4.canceled -= instance.OnAnswer4;
-                @answer5.started -= instance.OnAnswer5;
-                @answer5.performed -= instance.OnAnswer5;
-                @answer5.canceled -= instance.OnAnswer5;
-                @confirm.started -= instance.OnConfirm;
-                @confirm.performed -= instance.OnConfirm;
-                @confirm.canceled -= instance.OnConfirm;
-                @SwitchUILayer.started -= instance.OnSwitchUILayer;
-                @SwitchUILayer.performed -= instance.OnSwitchUILayer;
-                @SwitchUILayer.canceled -= instance.OnSwitchUILayer;
+                @weiter.started -= instance.OnWeiter;
+                @weiter.performed -= instance.OnWeiter;
+                @weiter.canceled -= instance.OnWeiter;
+                @zurück.started -= instance.OnZurück;
+                @zurück.performed -= instance.OnZurück;
+                @zurück.canceled -= instance.OnZurück;
+                @antwort1.started -= instance.OnAntwort1;
+                @antwort1.performed -= instance.OnAntwort1;
+                @antwort1.canceled -= instance.OnAntwort1;
+                @antwort2.started -= instance.OnAntwort2;
+                @antwort2.performed -= instance.OnAntwort2;
+                @antwort2.canceled -= instance.OnAntwort2;
+                @antwort3.started -= instance.OnAntwort3;
+                @antwort3.performed -= instance.OnAntwort3;
+                @antwort3.canceled -= instance.OnAntwort3;
+                @antwort4.started -= instance.OnAntwort4;
+                @antwort4.performed -= instance.OnAntwort4;
+                @antwort4.canceled -= instance.OnAntwort4;
+                @antwort5.started -= instance.OnAntwort5;
+                @antwort5.performed -= instance.OnAntwort5;
+                @antwort5.canceled -= instance.OnAntwort5;
+                @antwort6.started -= instance.OnAntwort6;
+                @antwort6.performed -= instance.OnAntwort6;
+                @antwort6.canceled -= instance.OnAntwort6;
+                @bestätigen.started -= instance.OnBestätigen;
+                @bestätigen.performed -= instance.OnBestätigen;
+                @bestätigen.canceled -= instance.OnBestätigen;
+                @UILayerwechseln.started -= instance.OnUILayerwechseln;
+                @UILayerwechseln.performed -= instance.OnUILayerwechseln;
+                @UILayerwechseln.canceled -= instance.OnUILayerwechseln;
             }
 
             /// <summary>
@@ -2850,10 +2850,10 @@ namespace IO
         // TutorialNavigation
         private readonly InputActionMap m_TutorialNavigation;
         private List<ITutorialNavigationActions> m_TutorialNavigationActionsCallbackInterfaces = new List<ITutorialNavigationActions>();
-        private readonly InputAction m_TutorialNavigation_next;
-        private readonly InputAction m_TutorialNavigation_prev;
-        private readonly InputAction m_TutorialNavigation_confirm;
-        private readonly InputAction m_TutorialNavigation_SwitchUILayer;
+        private readonly InputAction m_TutorialNavigation_weiter;
+        private readonly InputAction m_TutorialNavigation_zurück;
+        private readonly InputAction m_TutorialNavigation_bestätigen;
+        private readonly InputAction m_TutorialNavigation_UILayerwechseln;
         private readonly InputAction m_TutorialNavigation_escape;
         /// <summary>
         /// Provides access to input actions defined in input action map "TutorialNavigation".
@@ -2867,21 +2867,21 @@ namespace IO
             /// </summary>
             public TutorialNavigationActions(@GameActions wrapper) { m_Wrapper = wrapper; }
             /// <summary>
-            /// Provides access to the underlying input action "TutorialNavigation/next".
+            /// Provides access to the underlying input action "TutorialNavigation/weiter".
             /// </summary>
-            public InputAction @next => m_Wrapper.m_TutorialNavigation_next;
+            public InputAction @weiter => m_Wrapper.m_TutorialNavigation_weiter;
             /// <summary>
-            /// Provides access to the underlying input action "TutorialNavigation/prev".
+            /// Provides access to the underlying input action "TutorialNavigation/zurück".
             /// </summary>
-            public InputAction @prev => m_Wrapper.m_TutorialNavigation_prev;
+            public InputAction @zurück => m_Wrapper.m_TutorialNavigation_zurück;
             /// <summary>
-            /// Provides access to the underlying input action "TutorialNavigation/confirm".
+            /// Provides access to the underlying input action "TutorialNavigation/bestätigen".
             /// </summary>
-            public InputAction @confirm => m_Wrapper.m_TutorialNavigation_confirm;
+            public InputAction @bestätigen => m_Wrapper.m_TutorialNavigation_bestätigen;
             /// <summary>
-            /// Provides access to the underlying input action "TutorialNavigation/SwitchUILayer".
+            /// Provides access to the underlying input action "TutorialNavigation/UILayerwechseln".
             /// </summary>
-            public InputAction @SwitchUILayer => m_Wrapper.m_TutorialNavigation_SwitchUILayer;
+            public InputAction @UILayerwechseln => m_Wrapper.m_TutorialNavigation_UILayerwechseln;
             /// <summary>
             /// Provides access to the underlying input action "TutorialNavigation/escape".
             /// </summary>
@@ -2912,18 +2912,18 @@ namespace IO
             {
                 if (instance == null || m_Wrapper.m_TutorialNavigationActionsCallbackInterfaces.Contains(instance)) return;
                 m_Wrapper.m_TutorialNavigationActionsCallbackInterfaces.Add(instance);
-                @next.started += instance.OnNext;
-                @next.performed += instance.OnNext;
-                @next.canceled += instance.OnNext;
-                @prev.started += instance.OnPrev;
-                @prev.performed += instance.OnPrev;
-                @prev.canceled += instance.OnPrev;
-                @confirm.started += instance.OnConfirm;
-                @confirm.performed += instance.OnConfirm;
-                @confirm.canceled += instance.OnConfirm;
-                @SwitchUILayer.started += instance.OnSwitchUILayer;
-                @SwitchUILayer.performed += instance.OnSwitchUILayer;
-                @SwitchUILayer.canceled += instance.OnSwitchUILayer;
+                @weiter.started += instance.OnWeiter;
+                @weiter.performed += instance.OnWeiter;
+                @weiter.canceled += instance.OnWeiter;
+                @zurück.started += instance.OnZurück;
+                @zurück.performed += instance.OnZurück;
+                @zurück.canceled += instance.OnZurück;
+                @bestätigen.started += instance.OnBestätigen;
+                @bestätigen.performed += instance.OnBestätigen;
+                @bestätigen.canceled += instance.OnBestätigen;
+                @UILayerwechseln.started += instance.OnUILayerwechseln;
+                @UILayerwechseln.performed += instance.OnUILayerwechseln;
+                @UILayerwechseln.canceled += instance.OnUILayerwechseln;
                 @escape.started += instance.OnEscape;
                 @escape.performed += instance.OnEscape;
                 @escape.canceled += instance.OnEscape;
@@ -2938,18 +2938,18 @@ namespace IO
             /// <seealso cref="TutorialNavigationActions" />
             private void UnregisterCallbacks(ITutorialNavigationActions instance)
             {
-                @next.started -= instance.OnNext;
-                @next.performed -= instance.OnNext;
-                @next.canceled -= instance.OnNext;
-                @prev.started -= instance.OnPrev;
-                @prev.performed -= instance.OnPrev;
-                @prev.canceled -= instance.OnPrev;
-                @confirm.started -= instance.OnConfirm;
-                @confirm.performed -= instance.OnConfirm;
-                @confirm.canceled -= instance.OnConfirm;
-                @SwitchUILayer.started -= instance.OnSwitchUILayer;
-                @SwitchUILayer.performed -= instance.OnSwitchUILayer;
-                @SwitchUILayer.canceled -= instance.OnSwitchUILayer;
+                @weiter.started -= instance.OnWeiter;
+                @weiter.performed -= instance.OnWeiter;
+                @weiter.canceled -= instance.OnWeiter;
+                @zurück.started -= instance.OnZurück;
+                @zurück.performed -= instance.OnZurück;
+                @zurück.canceled -= instance.OnZurück;
+                @bestätigen.started -= instance.OnBestätigen;
+                @bestätigen.performed -= instance.OnBestätigen;
+                @bestätigen.canceled -= instance.OnBestätigen;
+                @UILayerwechseln.started -= instance.OnUILayerwechseln;
+                @UILayerwechseln.performed -= instance.OnUILayerwechseln;
+                @UILayerwechseln.canceled -= instance.OnUILayerwechseln;
                 @escape.started -= instance.OnEscape;
                 @escape.performed -= instance.OnEscape;
                 @escape.canceled -= instance.OnEscape;
@@ -3647,7 +3647,7 @@ namespace IO
         // Constants
         private readonly InputActionMap m_Constants;
         private List<IConstantsActions> m_ConstantsActionsCallbackInterfaces = new List<IConstantsActions>();
-        private readonly InputAction m_Constants_reset;
+        private readonly InputAction m_Constants_Tastenbelegungzurücksetzen;
         private readonly InputAction m_Constants_any;
         /// <summary>
         /// Provides access to input actions defined in input action map "Constants".
@@ -3661,9 +3661,9 @@ namespace IO
             /// </summary>
             public ConstantsActions(@GameActions wrapper) { m_Wrapper = wrapper; }
             /// <summary>
-            /// Provides access to the underlying input action "Constants/reset".
+            /// Provides access to the underlying input action "Constants/Tastenbelegungzurücksetzen".
             /// </summary>
-            public InputAction @reset => m_Wrapper.m_Constants_reset;
+            public InputAction @Tastenbelegungzurücksetzen => m_Wrapper.m_Constants_Tastenbelegungzurücksetzen;
             /// <summary>
             /// Provides access to the underlying input action "Constants/any".
             /// </summary>
@@ -3694,9 +3694,9 @@ namespace IO
             {
                 if (instance == null || m_Wrapper.m_ConstantsActionsCallbackInterfaces.Contains(instance)) return;
                 m_Wrapper.m_ConstantsActionsCallbackInterfaces.Add(instance);
-                @reset.started += instance.OnReset;
-                @reset.performed += instance.OnReset;
-                @reset.canceled += instance.OnReset;
+                @Tastenbelegungzurücksetzen.started += instance.OnTastenbelegungzurücksetzen;
+                @Tastenbelegungzurücksetzen.performed += instance.OnTastenbelegungzurücksetzen;
+                @Tastenbelegungzurücksetzen.canceled += instance.OnTastenbelegungzurücksetzen;
                 @any.started += instance.OnAny;
                 @any.performed += instance.OnAny;
                 @any.canceled += instance.OnAny;
@@ -3711,9 +3711,9 @@ namespace IO
             /// <seealso cref="ConstantsActions" />
             private void UnregisterCallbacks(IConstantsActions instance)
             {
-                @reset.started -= instance.OnReset;
-                @reset.performed -= instance.OnReset;
-                @reset.canceled -= instance.OnReset;
+                @Tastenbelegungzurücksetzen.started -= instance.OnTastenbelegungzurücksetzen;
+                @Tastenbelegungzurücksetzen.performed -= instance.OnTastenbelegungzurücksetzen;
+                @Tastenbelegungzurücksetzen.canceled -= instance.OnTastenbelegungzurücksetzen;
                 @any.started -= instance.OnAny;
                 @any.performed -= instance.OnAny;
                 @any.canceled -= instance.OnAny;
@@ -3758,61 +3758,61 @@ namespace IO
         public interface IPerkinsBrailerActions
         {
             /// <summary>
-            /// Method invoked when associated input action "Dot0" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "Punkt 1" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnDot0(InputAction.CallbackContext context);
+            void OnPunkt1(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "Dot1" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "Punkt 2" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnDot1(InputAction.CallbackContext context);
+            void OnPunkt2(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "Dot2" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "Punkt 3" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnDot2(InputAction.CallbackContext context);
+            void OnPunkt3(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "Dot3" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "Punkt 4" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnDot3(InputAction.CallbackContext context);
+            void OnPunkt4(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "Dot4" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "Punkt 5" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnDot4(InputAction.CallbackContext context);
+            void OnPunkt5(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "Dot5" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "Punkt 6" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnDot5(InputAction.CallbackContext context);
+            void OnPunkt6(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "Space" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "Leertaste" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnSpace(InputAction.CallbackContext context);
+            void OnLeertaste(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "Delete" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "Rücktaste" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnDelete(InputAction.CallbackContext context);
+            void OnRücktaste(InputAction.CallbackContext context);
         }
         /// <summary>
         /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "BrailleSettings" which allows adding and removing callbacks.
@@ -3822,61 +3822,61 @@ namespace IO
         public interface IBrailleSettingsActions
         {
             /// <summary>
-            /// Method invoked when associated input action "BrailleSizeUp" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "Schriftgröße erhöhen" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnBrailleSizeUp(InputAction.CallbackContext context);
+            void OnSchriftgrößeerhöhen(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "BrailleSizeDown" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "Schriftgröße verkleinern" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnBrailleSizeDown(InputAction.CallbackContext context);
+            void OnSchriftgrößeverkleinern(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "DotSizeUp" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "Punktgröße erhöhen" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnDotSizeUp(InputAction.CallbackContext context);
+            void OnPunktgrößeerhöhen(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "DotSizeDown" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "Punktgröße verkleinern" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnDotSizeDown(InputAction.CallbackContext context);
+            void OnPunktgrößeverkleinern(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "BrailleSpacingUp" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "Zeichenabstand erhöhen" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnBrailleSpacingUp(InputAction.CallbackContext context);
+            void OnZeichenabstanderhöhen(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "BrailleSpacingDown" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "Zeichenabstand verkleinern" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnBrailleSpacingDown(InputAction.CallbackContext context);
+            void OnZeichenabstandverkleinern(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "LineSpacingUp" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "Zeilenabstand erhöhen" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnLineSpacingUp(InputAction.CallbackContext context);
+            void OnZeilenabstanderhöhen(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "LineSpacingDown" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "Zeilenabstand verkleinern" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnLineSpacingDown(InputAction.CallbackContext context);
+            void OnZeilenabstandverkleinern(InputAction.CallbackContext context);
         }
         /// <summary>
         /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Navigation" which allows adding and removing callbacks.
@@ -3886,75 +3886,75 @@ namespace IO
         public interface INavigationActions
         {
             /// <summary>
-            /// Method invoked when associated input action "next" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "weiter" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnNext(InputAction.CallbackContext context);
+            void OnWeiter(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "prev" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "zurück" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnPrev(InputAction.CallbackContext context);
+            void OnZurück(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "answer0" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "antwort 1" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnAnswer0(InputAction.CallbackContext context);
+            void OnAntwort1(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "answer1" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "antwort 2" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnAnswer1(InputAction.CallbackContext context);
+            void OnAntwort2(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "answer2" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "antwort 3" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnAnswer2(InputAction.CallbackContext context);
+            void OnAntwort3(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "answer3" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "antwort 4" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnAnswer3(InputAction.CallbackContext context);
+            void OnAntwort4(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "answer4" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "antwort 5" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnAnswer4(InputAction.CallbackContext context);
+            void OnAntwort5(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "answer5" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "antwort 6" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnAnswer5(InputAction.CallbackContext context);
+            void OnAntwort6(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "confirm" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "bestätigen" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnConfirm(InputAction.CallbackContext context);
+            void OnBestätigen(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "Switch UI Layer" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "UI Layer wechseln" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnSwitchUILayer(InputAction.CallbackContext context);
+            void OnUILayerwechseln(InputAction.CallbackContext context);
         }
         /// <summary>
         /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "TutorialNavigation" which allows adding and removing callbacks.
@@ -3964,33 +3964,33 @@ namespace IO
         public interface ITutorialNavigationActions
         {
             /// <summary>
-            /// Method invoked when associated input action "next" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "weiter" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnNext(InputAction.CallbackContext context);
+            void OnWeiter(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "prev" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "zurück" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnPrev(InputAction.CallbackContext context);
+            void OnZurück(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "confirm" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "bestätigen" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnConfirm(InputAction.CallbackContext context);
+            void OnBestätigen(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "Switch UI Layer" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "UI Layer wechseln" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnSwitchUILayer(InputAction.CallbackContext context);
+            void OnUILayerwechseln(InputAction.CallbackContext context);
             /// <summary>
             /// Method invoked when associated input action "escape" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
@@ -4379,12 +4379,12 @@ namespace IO
         public interface IConstantsActions
         {
             /// <summary>
-            /// Method invoked when associated input action "reset" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "Tastenbelegung zurücksetzen" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnReset(InputAction.CallbackContext context);
+            void OnTastenbelegungzurücksetzen(InputAction.CallbackContext context);
             /// <summary>
             /// Method invoked when associated input action "any" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>

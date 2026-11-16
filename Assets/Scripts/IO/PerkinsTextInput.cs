@@ -19,20 +19,20 @@ namespace IO
         public override void Enable()
         {
             _pressedDots = new List<bool>(Textbox.EmptyBrailleList);
-            Actions.PerkinsBrailer.Dot0.started += OnDot0Started;
-            Actions.PerkinsBrailer.Dot0.canceled += OnDot0Canceled;
-            Actions.PerkinsBrailer.Dot1.started += OnDot1Started;
-            Actions.PerkinsBrailer.Dot1.canceled += OnDot1Canceled;
-            Actions.PerkinsBrailer.Dot2.started += OnDot2Started;
-            Actions.PerkinsBrailer.Dot2.canceled += OnDot2Canceled;
-            Actions.PerkinsBrailer.Dot3.started += OnDot3Started;
-            Actions.PerkinsBrailer.Dot3.canceled += OnDot3Canceled;
-            Actions.PerkinsBrailer.Dot4.started += OnDot4Started;
-            Actions.PerkinsBrailer.Dot4.canceled += OnDot4Canceled;
-            Actions.PerkinsBrailer.Dot5.started += OnDot5Started;
-            Actions.PerkinsBrailer.Dot5.canceled += OnDot5Canceled;
-            Actions.PerkinsBrailer.Delete.started += OnDeleteCharacter;
-            Actions.PerkinsBrailer.Space.started += OnSpace;
+            Actions.PerkinsBrailer.Punkt1.started += OnDot0Started;
+            Actions.PerkinsBrailer.Punkt1.canceled += OnDot0Canceled;
+            Actions.PerkinsBrailer.Punkt2.started += OnDot1Started;
+            Actions.PerkinsBrailer.Punkt2.canceled += OnDot1Canceled;
+            Actions.PerkinsBrailer.Punkt3.started += OnDot2Started;
+            Actions.PerkinsBrailer.Punkt3.canceled += OnDot2Canceled;
+            Actions.PerkinsBrailer.Punkt4.started += OnDot3Started;
+            Actions.PerkinsBrailer.Punkt4.canceled += OnDot3Canceled;
+            Actions.PerkinsBrailer.Punkt5.started += OnDot4Started;
+            Actions.PerkinsBrailer.Punkt5.canceled += OnDot4Canceled;
+            Actions.PerkinsBrailer.Punkt6.started += OnDot5Started;
+            Actions.PerkinsBrailer.Punkt6.canceled += OnDot5Canceled;
+            Actions.PerkinsBrailer.Rücktaste.started += OnDeleteCharacter;
+            Actions.PerkinsBrailer.Leertaste.started += OnSpace;
 
             StringBuilder actionsString = new StringBuilder();
             actionsString.Append("action string: \n");
@@ -46,20 +46,20 @@ namespace IO
 
         public override void Disable()
         {
-            Actions.PerkinsBrailer.Dot0.started -= OnDot0Started;
-            Actions.PerkinsBrailer.Dot0.canceled -= OnDot0Canceled;
-            Actions.PerkinsBrailer.Dot1.started -= OnDot1Started;
-            Actions.PerkinsBrailer.Dot1.canceled -= OnDot1Canceled;
-            Actions.PerkinsBrailer.Dot2.started -= OnDot2Started;
-            Actions.PerkinsBrailer.Dot2.canceled -= OnDot2Canceled;
-            Actions.PerkinsBrailer.Dot3.started -= OnDot3Started;
-            Actions.PerkinsBrailer.Dot3.canceled -= OnDot3Canceled;
-            Actions.PerkinsBrailer.Dot4.started -= OnDot4Started;
-            Actions.PerkinsBrailer.Dot4.canceled -= OnDot4Canceled;
-            Actions.PerkinsBrailer.Dot5.started -= OnDot5Started;
-            Actions.PerkinsBrailer.Dot5.canceled -= OnDot5Canceled;
-            Actions.PerkinsBrailer.Delete.started -= OnDeleteCharacter;
-            Actions.PerkinsBrailer.Space.started -= OnSpace;
+            Actions.PerkinsBrailer.Punkt1.started -= OnDot0Started;
+            Actions.PerkinsBrailer.Punkt1.canceled -= OnDot0Canceled;
+            Actions.PerkinsBrailer.Punkt2.started -= OnDot1Started;
+            Actions.PerkinsBrailer.Punkt2.canceled -= OnDot1Canceled;
+            Actions.PerkinsBrailer.Punkt3.started -= OnDot2Started;
+            Actions.PerkinsBrailer.Punkt3.canceled -= OnDot2Canceled;
+            Actions.PerkinsBrailer.Punkt4.started -= OnDot3Started;
+            Actions.PerkinsBrailer.Punkt4.canceled -= OnDot3Canceled;
+            Actions.PerkinsBrailer.Punkt5.started -= OnDot4Started;
+            Actions.PerkinsBrailer.Punkt5.canceled -= OnDot4Canceled;
+            Actions.PerkinsBrailer.Punkt6.started -= OnDot5Started;
+            Actions.PerkinsBrailer.Punkt6.canceled -= OnDot5Canceled;
+            Actions.PerkinsBrailer.Rücktaste.started -= OnDeleteCharacter;
+            Actions.PerkinsBrailer.Leertaste.started -= OnSpace;
 
             Actions.PerkinsBrailer.Disable();
         }

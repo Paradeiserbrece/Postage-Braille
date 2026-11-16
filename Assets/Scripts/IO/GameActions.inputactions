@@ -7,7 +7,7 @@
             "id": "5c0322a0-2b7c-41d4-96d7-c9ed0ba7f0e4",
             "actions": [
                 {
-                    "name": "Dot0",
+                    "name": "Punkt 1",
                     "type": "Button",
                     "id": "b1c319fb-d426-429f-8065-f34c7f46eb10",
                     "expectedControlType": "",
@@ -16,7 +16,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Dot1",
+                    "name": "Punkt 2",
                     "type": "Button",
                     "id": "75426906-62fc-41a5-b4a3-9cf14672683d",
                     "expectedControlType": "",
@@ -25,7 +25,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Dot2",
+                    "name": "Punkt 3",
                     "type": "Button",
                     "id": "26d76ad9-e422-45e4-bb5f-0a2433e3c8c0",
                     "expectedControlType": "",
@@ -34,7 +34,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Dot3",
+                    "name": "Punkt 4",
                     "type": "Button",
                     "id": "ec902e29-2346-4d06-85bb-1715c56b0205",
                     "expectedControlType": "",
@@ -43,7 +43,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Dot4",
+                    "name": "Punkt 5",
                     "type": "Button",
                     "id": "d3be0a1e-f422-4a2a-b32d-96063a1c6317",
                     "expectedControlType": "",
@@ -52,7 +52,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Dot5",
+                    "name": "Punkt 6",
                     "type": "Button",
                     "id": "3725501b-cd31-494c-8dfb-c07445ef228c",
                     "expectedControlType": "",
@@ -61,7 +61,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Space",
+                    "name": "Leertaste",
                     "type": "Button",
                     "id": "c19364b2-9a56-4ed3-b4c7-06806d1ac702",
                     "expectedControlType": "",
@@ -70,7 +70,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Delete",
+                    "name": "Rücktaste",
                     "type": "Button",
                     "id": "bf986db2-29c1-44a2-8443-5831968709ac",
                     "expectedControlType": "",
@@ -87,7 +87,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Dot0",
+                    "action": "Punkt 1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -98,7 +98,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Dot1",
+                    "action": "Punkt 2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -109,7 +109,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Dot2",
+                    "action": "Punkt 3",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -120,7 +120,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Dot3",
+                    "action": "Punkt 4",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -131,7 +131,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Dot4",
+                    "action": "Punkt 5",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -142,7 +142,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Dot5",
+                    "action": "Punkt 6",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -153,7 +153,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Space",
+                    "action": "Leertaste",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -164,7 +164,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Delete",
+                    "action": "Rücktaste",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -175,7 +175,7 @@
             "id": "97912eb7-eefd-45f7-a82c-bc948080cf9f",
             "actions": [
                 {
-                    "name": "BrailleSizeUp",
+                    "name": "Schriftgröße erhöhen",
                     "type": "Button",
                     "id": "a5a5b794-6c42-4935-824f-3d83a4bc3162",
                     "expectedControlType": "",
@@ -184,7 +184,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "BrailleSizeDown",
+                    "name": "Schriftgröße verkleinern",
                     "type": "Button",
                     "id": "91087f4c-6700-441d-a54a-d7379e86609b",
                     "expectedControlType": "",
@@ -193,7 +193,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "DotSizeUp",
+                    "name": "Punktgröße erhöhen",
                     "type": "Button",
                     "id": "7c5adfd4-fb8c-4ab4-b614-2d7a983a55d4",
                     "expectedControlType": "",
@@ -202,7 +202,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "DotSizeDown",
+                    "name": "Punktgröße verkleinern",
                     "type": "Button",
                     "id": "02da410a-1bef-4492-87b9-fc6c97fa7204",
                     "expectedControlType": "",
@@ -211,7 +211,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "BrailleSpacingUp",
+                    "name": "Zeichenabstand erhöhen",
                     "type": "Button",
                     "id": "bab74876-d753-4e47-b6f5-b7b6a0eadf41",
                     "expectedControlType": "",
@@ -220,7 +220,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "BrailleSpacingDown",
+                    "name": "Zeichenabstand verkleinern",
                     "type": "Button",
                     "id": "a8c271b9-7c30-4cd6-a156-dd4cb718f4c1",
                     "expectedControlType": "",
@@ -229,7 +229,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "LineSpacingUp",
+                    "name": "Zeilenabstand erhöhen",
                     "type": "Button",
                     "id": "9a49bae7-649a-4975-985a-1b79ff85a53e",
                     "expectedControlType": "",
@@ -238,7 +238,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "LineSpacingDown",
+                    "name": "Zeilenabstand verkleinern",
                     "type": "Button",
                     "id": "5617dde9-2469-48c2-a7b5-12e34aba8977",
                     "expectedControlType": "",
@@ -255,7 +255,7 @@
                     "interactions": "Press",
                     "processors": "",
                     "groups": "",
-                    "action": "BrailleSizeUp",
+                    "action": "Schriftgröße erhöhen",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -266,7 +266,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "BrailleSizeDown",
+                    "action": "Schriftgröße verkleinern",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -277,7 +277,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "DotSizeUp",
+                    "action": "Punktgröße erhöhen",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -288,7 +288,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "DotSizeDown",
+                    "action": "Punktgröße verkleinern",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -299,7 +299,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "BrailleSpacingUp",
+                    "action": "Zeichenabstand erhöhen",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -310,7 +310,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "BrailleSpacingDown",
+                    "action": "Zeichenabstand verkleinern",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -321,7 +321,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "LineSpacingUp",
+                    "action": "Zeilenabstand erhöhen",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -332,7 +332,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "LineSpacingDown",
+                    "action": "Zeilenabstand verkleinern",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -343,7 +343,7 @@
             "id": "551f1fdd-0629-479f-ac77-27f5931e6de5",
             "actions": [
                 {
-                    "name": "next",
+                    "name": "weiter",
                     "type": "Button",
                     "id": "8cb8b65b-3f9d-4137-905a-92a450d5c08a",
                     "expectedControlType": "",
@@ -352,7 +352,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "prev",
+                    "name": "zurück",
                     "type": "Button",
                     "id": "e2cef3cf-fb95-4336-b071-7094ed7c10d9",
                     "expectedControlType": "",
@@ -361,7 +361,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "answer0",
+                    "name": "antwort 1",
                     "type": "Button",
                     "id": "275fe278-a833-4619-8a97-8965ca105d61",
                     "expectedControlType": "",
@@ -370,7 +370,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "answer1",
+                    "name": "antwort 2",
                     "type": "Button",
                     "id": "5b044e24-b65c-4e80-aab7-8eea6675adc7",
                     "expectedControlType": "",
@@ -379,7 +379,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "answer2",
+                    "name": "antwort 3",
                     "type": "Button",
                     "id": "16690296-570f-44f5-a834-07717440024b",
                     "expectedControlType": "",
@@ -388,7 +388,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "answer3",
+                    "name": "antwort 4",
                     "type": "Button",
                     "id": "328db5b8-d6c5-4f77-b82e-ecb9cc231905",
                     "expectedControlType": "",
@@ -397,7 +397,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "answer4",
+                    "name": "antwort 5",
                     "type": "Button",
                     "id": "1f3c52b8-ea2c-4151-b25e-a2762125783d",
                     "expectedControlType": "",
@@ -406,7 +406,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "answer5",
+                    "name": "antwort 6",
                     "type": "Button",
                     "id": "7310f6c2-3f7c-4367-a6c3-5343e972af65",
                     "expectedControlType": "",
@@ -415,7 +415,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "confirm",
+                    "name": "bestätigen",
                     "type": "Button",
                     "id": "d6966af9-abee-40a1-a1ab-1eb97c8d6876",
                     "expectedControlType": "",
@@ -424,7 +424,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Switch UI Layer",
+                    "name": "UI Layer wechseln",
                     "type": "Button",
                     "id": "6367a5a5-48ff-44c7-a8e5-e805bca1c5da",
                     "expectedControlType": "",
@@ -441,7 +441,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "next",
+                    "action": "weiter",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -452,7 +452,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "prev",
+                    "action": "zurück",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -463,7 +463,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "answer0",
+                    "action": "antwort 1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -474,7 +474,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "answer1",
+                    "action": "antwort 2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -485,7 +485,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "answer2",
+                    "action": "antwort 3",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -496,7 +496,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "answer3",
+                    "action": "antwort 4",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -507,7 +507,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "answer4",
+                    "action": "antwort 5",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -518,7 +518,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "answer5",
+                    "action": "antwort 6",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -529,7 +529,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "confirm",
+                    "action": "bestätigen",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -540,7 +540,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Switch UI Layer",
+                    "action": "UI Layer wechseln",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -551,7 +551,7 @@
             "id": "5c6959f8-f063-495d-9d01-485dde983b17",
             "actions": [
                 {
-                    "name": "next",
+                    "name": "weiter",
                     "type": "Button",
                     "id": "ec65a48e-1610-48fa-b140-0303b842b650",
                     "expectedControlType": "",
@@ -560,7 +560,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "prev",
+                    "name": "zurück",
                     "type": "Button",
                     "id": "3488d212-64e3-43b3-996b-42fa31e1248b",
                     "expectedControlType": "",
@@ -569,7 +569,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "confirm",
+                    "name": "bestätigen",
                     "type": "Button",
                     "id": "3b733802-03d1-439d-8e44-ca0dc8853697",
                     "expectedControlType": "",
@@ -578,7 +578,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Switch UI Layer",
+                    "name": "UI Layer wechseln",
                     "type": "Button",
                     "id": "f6c04bff-f893-44b7-a3c0-d643275b39ae",
                     "expectedControlType": "",
@@ -604,7 +604,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "next",
+                    "action": "weiter",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -615,7 +615,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "prev",
+                    "action": "zurück",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -626,7 +626,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "confirm",
+                    "action": "bestätigen",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -637,7 +637,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Switch UI Layer",
+                    "action": "UI Layer wechseln",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1993,7 +1993,7 @@
             "id": "44da10d6-4546-4f0d-b853-c30c8277bdb9",
             "actions": [
                 {
-                    "name": "reset",
+                    "name": "Tastenbelegung zurücksetzen",
                     "type": "Button",
                     "id": "002cfa16-7744-4c4f-b3d8-abdf77385101",
                     "expectedControlType": "",
@@ -2019,7 +2019,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "reset",
+                    "action": "Tastenbelegung zurücksetzen",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
