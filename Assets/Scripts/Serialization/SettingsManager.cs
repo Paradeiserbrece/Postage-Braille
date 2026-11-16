@@ -28,6 +28,7 @@ namespace Settings
         {
             _settings = new GlobalSettings();
 
+            Debug.Log("Searching for settings files in " + SettingsPath);
             if (File.Exists(SettingsPath))
             {
                 string json = File.ReadAllText(SettingsPath);
