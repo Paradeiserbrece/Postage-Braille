@@ -16,9 +16,15 @@ namespace Utility
         [SerializeField] internal string confirmText;
         public AssistiveOutput.OutputType assistiveOutputType;
 
+
+        private void Awake()
+        {
+            if  (border != null)
+                border.enabled = false;
+        }
+
         private IEnumerator Start()
         {
-            border.enabled = false;
             yield return new WaitUntil(() => SettingsManager.Settings != null);
             border.color = SettingsManager.Settings.HighlightedColor;
             assistiveOutputType = SettingsManager.Settings.StandardOutputType;
