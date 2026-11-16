@@ -197,7 +197,7 @@ namespace Tutorial
         public static string NavigationOutput()
         {
             string outputText =
-                "Hiermit öffnest du die Tastenbelegung für die Navigation. Um eine Tastenbelegung zu ändern wähle in der Liste die zu ändernde Aktion aus und drücke die Enter-Taste. Danach drücke die gewünschte Taste. Die Aktion wird von nun an mit der neuen Taste ausgelöst.";
+                "Hiermit öffnest du die Tastenbelegung für die Navigation. Um eine Tastenbelegung zu ändern wähle in der Liste die zu ändernde Aktion aus und drücke die Enter-Taste. Danach drücke die gewünschte Taste. Die Aktion wird von nun an mit der neuen Taste ausgelöst. Das Ändern der Tastenbelegung ist in der Einführung nicht möglich.";
             Output(outputText);
             return outputText;
         }

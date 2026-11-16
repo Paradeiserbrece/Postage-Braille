@@ -1,5 +1,6 @@
 ﻿using System;
 using Data;
+using UnityEditor.Analytics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -46,6 +47,7 @@ namespace UI
             CurrentUI.CurrentLayer.FocusFirst();
             Instance.mainCamera.transform.position = Instance.gameCameraTransform.position;
             GameManager.Instance.NextQuestion();
+            CurrentUI.SwitchLayer(0);
         }
 
         public static void TransitionToGameScreenInTutorial()

@@ -89,12 +89,15 @@ namespace IO
             }
             if (_actionLayerIndex >= 0) SceneControl.Instance.settingsUI.RemoveLayer(_actionLayerIndex);
             _actionLayer = new UILayer("ActionLayer", buttons);
-            _actionLayerIndex = SceneControl.Instance.settingsUI.AddLayer(_actionLayer);
             
-            Canvas.ForceUpdateCanvases();
+            //Canvas.ForceUpdateCanvases();
             _inputActionsPanel.currentlyDisplayedActionMap = actionMap;
             _inputActionsPanel.ScrollToTop();
+            
+            _actionLayerIndex = SceneControl.Instance.settingsUI.AddLayer(_actionLayer);
         }
+        
+        
 
         public void RebindAction(InputAction inputAction, FocusableRebindOption button)
         {

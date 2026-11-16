@@ -2658,12 +2658,40 @@ PrefabInstance:
       value: "Zu\xFCck"
       objectReference: {fileID: 0}
     - target: {fileID: 6374032343995571574, guid: 437a5809eacbcf64f8b258cb0a086a8b, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374032343995571574, guid: 437a5809eacbcf64f8b258cb0a086a8b, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374032343995571574, guid: 437a5809eacbcf64f8b258cb0a086a8b, type: 3}
       propertyPath: action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1975903113}
     - target: {fileID: 6374032343995571574, guid: 437a5809eacbcf64f8b258cb0a086a8b, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1986567312}
+    - target: {fileID: 6374032343995571574, guid: 437a5809eacbcf64f8b258cb0a086a8b, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374032343995571574, guid: 437a5809eacbcf64f8b258cb0a086a8b, type: 3}
       propertyPath: action.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: TransitionToGameScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374032343995571574, guid: 437a5809eacbcf64f8b258cb0a086a8b, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwitchLayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374032343995571574, guid: 437a5809eacbcf64f8b258cb0a086a8b, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UI.UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374032343995571574, guid: 437a5809eacbcf64f8b258cb0a086a8b, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6725078602908296573, guid: 437a5809eacbcf64f8b258cb0a086a8b, type: 3}
       propertyPath: m_Sprite
@@ -3247,12 +3275,40 @@ PrefabInstance:
       value: "Zur\xFCck"
       objectReference: {fileID: 0}
     - target: {fileID: 6374032343995571574, guid: 437a5809eacbcf64f8b258cb0a086a8b, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374032343995571574, guid: 437a5809eacbcf64f8b258cb0a086a8b, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374032343995571574, guid: 437a5809eacbcf64f8b258cb0a086a8b, type: 3}
       propertyPath: action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1975903113}
     - target: {fileID: 6374032343995571574, guid: 437a5809eacbcf64f8b258cb0a086a8b, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1986567310}
+    - target: {fileID: 6374032343995571574, guid: 437a5809eacbcf64f8b258cb0a086a8b, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374032343995571574, guid: 437a5809eacbcf64f8b258cb0a086a8b, type: 3}
       propertyPath: action.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: TransitionToGameScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374032343995571574, guid: 437a5809eacbcf64f8b258cb0a086a8b, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374032343995571574, guid: 437a5809eacbcf64f8b258cb0a086a8b, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UI.SceneControl, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374032343995571574, guid: 437a5809eacbcf64f8b258cb0a086a8b, type: 3}
+      propertyPath: action.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6725078602908296573, guid: 437a5809eacbcf64f8b258cb0a086a8b, type: 3}
       propertyPath: m_Sprite
@@ -3431,6 +3487,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 270680320}
     m_Modifications:
+    - target: {fileID: 876854642531152436, guid: 8f364f5787df62946942082f71a4b2da, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 207.812
+      objectReference: {fileID: 0}
+    - target: {fileID: 876854642531152436, guid: 8f364f5787df62946942082f71a4b2da, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -103.901
+      objectReference: {fileID: 0}
     - target: {fileID: 2352037549065257747, guid: 8f364f5787df62946942082f71a4b2da, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

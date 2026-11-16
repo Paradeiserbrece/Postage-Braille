@@ -46,7 +46,7 @@ namespace Settings
         public float TextScrollSpeed = 520f;
 
         // Audio settings
-        public bool AdditionalAudioOutput = false;
+        public bool AdditionalAudioOutput = true;
 
         // Colors
         public Color BrailleColor = Color.black;
