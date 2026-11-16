@@ -18,8 +18,8 @@ namespace Utility
 
         private IEnumerator Start()
         {
-            yield return new WaitUntil(() => SettingsManager.Settings != null);
             border.enabled = false;
+            yield return new WaitUntil(() => SettingsManager.Settings != null);
             border.color = SettingsManager.Settings.HighlightedColor;
             assistiveOutputType = SettingsManager.Settings.StandardOutputType;
         }

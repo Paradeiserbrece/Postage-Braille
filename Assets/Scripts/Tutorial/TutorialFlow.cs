@@ -318,12 +318,17 @@ namespace Tutorial
                 case State.SettingsMenuNavigation:
                     TutorialOutputs.RebindBackOutputSubmit();
 
-                    MultimodalInputManager.Instance?.DisableInput(MultimodalInputManager.InputType.Tutorial);
-                    SettingsManager.Settings.StartTutorial = false;
-                    SettingsManager.Instance.SaveSettings();
-                    AssistiveOutput.WaitForKeyDown(() => SceneManager.LoadScene("Scenes/LetterSortingScene", LoadSceneMode.Single));
+                    FinishTutorial();
                     break;
             }
+        }
+
+        public void FinishTutorial()
+        {
+            MultimodalInputManager.Instance?.DisableInput(MultimodalInputManager.InputType.Tutorial);
+            SettingsManager.Settings.StartTutorial = false;
+            SettingsManager.Instance.SaveSettings();
+            AssistiveOutput.WaitForKeyDown(() => SceneManager.LoadScene("Scenes/LetterSortingScene", LoadSceneMode.Single));
         }
 
         public void Navigation()

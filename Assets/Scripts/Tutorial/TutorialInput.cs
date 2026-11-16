@@ -115,8 +115,7 @@ namespace Tutorial
         private void OnEscape(InputAction.CallbackContext context)
         {
             TutorialOutputs.SkipTutorial();
-            MultimodalInputManager.Instance?.DisableInput(MultimodalInputManager.InputType.Tutorial);
-            AssistiveOutput.WaitForKeyDown(() => SceneManager.LoadScene("Scenes/LetterSortingScene"));
+            TutorialFlow.Instance.FinishTutorial();
         }
     }
 }

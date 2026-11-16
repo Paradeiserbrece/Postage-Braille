@@ -91,6 +91,7 @@ namespace UI
         public static void StartTutorial()
         {
             SceneManager.LoadScene("Scenes/Tutorial", LoadSceneMode.Single);
+            
         }
     }
 }
