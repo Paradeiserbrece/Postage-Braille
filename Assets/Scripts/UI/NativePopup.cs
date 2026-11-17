@@ -1,4 +1,4 @@
-
+﻿
 using System;
 using System.Runtime.InteropServices;
 
@@ -24,7 +24,7 @@ public static class NativePopup
         MessageBox(
             IntPtr.Zero,
             message,
-            "",
+            "Notification",
             MB_OK | MB_ICONINFORMATION
         );
     }

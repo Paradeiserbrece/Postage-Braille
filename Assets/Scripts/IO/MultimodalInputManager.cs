@@ -83,7 +83,7 @@ namespace IO
                 default: EnableInput(InputType.Navigation); break;
             }
 
-            _inputs[InputType.Reset] = new ResetInput(Actions);
+            _inputs[InputType.Reset] = new GlobalInput(Actions);
             EnableInput(InputType.Reset);
 
             _inputs[InputType.BrailleSettings] = new BrailleSettingsInput(Actions);

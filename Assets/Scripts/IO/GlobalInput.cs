@@ -1,19 +1,20 @@
 using Braille;
+using UI;
 using UnityEngine.InputSystem;
 
 namespace IO
 {
-    public class ResetInput : AbstractInput
+    public class GlobalInput : AbstractInput
     {
         private string _popupText = "";
-        public ResetInput(GameActions gameActions) : base(gameActions)
+        public GlobalInput(GameActions gameActions) : base(gameActions)
         {
             this.Actions = gameActions;
             
             IOEventManager.AssistiveOutput += SetPopupText;
         }
         
-        ~ResetInput()
+        ~GlobalInput()
         {
             IOEventManager.AssistiveOutput -= SetPopupText;
         }
