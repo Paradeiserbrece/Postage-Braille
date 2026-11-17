@@ -30,10 +30,18 @@ namespace Data
         /// </summary>
         public int attempts;
 
+        public int characterAttempts;
+
+        public int wordAttempts;
+
         /// <summary>
         /// The total number of successful attempts for this unit.
         /// </summary>
         public int successes;
+        
+        public int characterSuccesses;
+        
+        public int wordSuccesses;
 
         /// <summary>
         /// Gets the success rate as a percentage.
@@ -41,6 +49,12 @@ namespace Data
         /// </summary>
         public double SuccessPercentage =>
             attempts == 0 ? 50 : Math.Round((double)successes / attempts * 100);
+
+        public double SuccesCharacterPercentage =>
+            characterAttempts == 0 ? 50 : Math.Round((double)characterSuccesses / characterAttempts * 100);
+
+        public double SuccessWordPercentage => wordAttempts == 0 ? 50 : Math.Round((double)wordSuccesses / wordAttempts * 100);
+
 
         /// <summary>
         /// Initializes a new instance of the <see cref="LetterUnit"/> class.

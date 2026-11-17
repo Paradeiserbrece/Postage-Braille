@@ -223,7 +223,7 @@ public class QuestionManager : MonoBehaviour
         var outputText = SettingsManager.Settings.AdditionalAudioOutput
             ? feedbackText.text + " Drücke eine beliebige Taste um fortzufahren."
             : feedbackText.text;
-        IOEventManager.InvokeAssistiveOutput( outputText , AssistiveOutput.OutputType.Both);
+        IOEventManager.InvokeAssistiveOutput(outputText, AssistiveOutput.OutputType.Both);
     }
 
 
@@ -250,8 +250,16 @@ public class QuestionManager : MonoBehaviour
     {
         LetterPackages.Instance.CurrentPackageUnit.attempts++;
 
+        if (CurrentQuestionType == QuestionType.Words) LetterPackages.Instance.CurrentPackageUnit.wordAttempts++;
+        else LetterPackages.Instance.CurrentPackageUnit.characterAttempts++;
+
         if (answer == correctAnswer)
+        {
             LetterPackages.Instance.CurrentPackageUnit.successes++;
+            if (CurrentQuestionType == QuestionType.Words) LetterPackages.Instance.CurrentPackageUnit.wordSuccesses++;
+            else LetterPackages.Instance.CurrentPackageUnit.characterSuccesses++;
+        }
+
         Debug.Log("Answered with: " + answer + " and correct: " + correctAnswer + "  attempts: " +
                   LetterPackages.Instance.CurrentPackageUnit.attempts + " in %: " +
                   LetterPackages.Instance.CurrentPackageUnit.SuccessPercentage);

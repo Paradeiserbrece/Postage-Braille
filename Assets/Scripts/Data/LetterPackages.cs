@@ -44,7 +44,7 @@ namespace Data
         /// <summary>
         /// The currently selected unit index for the active language.
         /// </summary>
-        public int packageProgress = 1;
+        public int packageProgress = 0;
 
         /// <summary>
         /// Singleton instance of the <see cref="LetterPackages"/> component.
@@ -71,6 +71,21 @@ namespace Data
             SaveSystem.LoadPackageProgress(Instance);
 
             ChangePackageLanguage(currentLanguage);
+        }
+
+        public void ResetLetterPackages()
+        {
+           Reset(); 
+            
+        }
+
+        private void Reset()
+        {
+            currentLanguagePackage = new List<LetterUnit>();
+            currentLanguage = SupportedLanguage.De;
+            packageProgress = 0;
+            Packages.Clear();
+            Awake();
         }
 
         private void LoadLetterPackageData(SupportedLanguage language)

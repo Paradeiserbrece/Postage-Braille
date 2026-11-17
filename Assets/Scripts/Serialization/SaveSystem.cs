@@ -52,5 +52,19 @@ namespace Serialization
                     save.progress[i].successes;
             }
         }
+        
+        public static void DeleteProgress()
+        {
+            var path = Path.Combine(Application.persistentDataPath, LetterPackages.Instance.currentLanguage + "_save.json");
+
+            if (File.Exists(path))
+            {
+                File.Delete(path);
+            }
+
+            LetterPackages.Instance.ResetLetterPackages();
+            
+        }
+        
     }
 }

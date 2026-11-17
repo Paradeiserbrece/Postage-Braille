@@ -27,22 +27,23 @@ namespace UI
 
         public void ChangeLetterUnit(LetterUnit letterUnit)
         {
-            this.LetterUnit = letterUnit;
+            LetterUnit = letterUnit;
             indexTMP.text = letterUnit.UnitIndex.ToString();
             lettersTMP.text = string.Join(", ", letterUnit.Letters);
             percentageTMP.text = letterUnit.SuccessPercentage + "%";
 
             text =
-                    $"Einheit: {letterUnit.UnitIndex}, " +
-                    $"Buchstaben:  {string.Join(", ", letterUnit.Letters)}, " +
+                    $"Aktive Einheit: {letterUnit.UnitIndex}, " +
                     $"Versuche: {letterUnit.attempts}, " +
-                    $"Richtig%:  {letterUnit.SuccessPercentage}%";
+                    $"Richtig%:  {letterUnit.SuccessPercentage}%, " +
+                    $"Richtige Buchstaben%: {letterUnit.SuccesCharacterPercentage}%, " +
+                    $"Richtige Wörter%: {letterUnit.SuccessWordPercentage}%";
         }
 
         public override void Focus()
         {
             if (text != null)
-                IOEventManager.InvokeAssistiveOutput("Derzeitig Aktive Einheit: " + text,
+                IOEventManager.InvokeAssistiveOutput(text,
                     SettingsManager.Settings.StandardOutputType);
             border.enabled = true;
         }
@@ -50,7 +51,7 @@ namespace UI
         public override void ConfirmAction()
         {
             if (text != null)
-                IOEventManager.InvokeAssistiveOutput("Derzeitig Aktive Einheit: " + text,
+                IOEventManager.InvokeAssistiveOutput(text,
                     SettingsManager.Settings.StandardOutputType);
         }
     }

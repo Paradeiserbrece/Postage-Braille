@@ -72,10 +72,12 @@ namespace UI
                 .GetComponentInChildren<FocusableLetterUnit>();
             
             focusableUnit.text =
-                $"Einheit {letterUnit.UnitIndex}, " +
-                $"Buchstaben: {string.Join(", ", letterUnit.Letters)}, " +
-                $"Versuche: {letterUnit.attempts}, " +
-                $"Erfolge: {letterUnit.SuccessPercentage}%";
+                    $"Einheit: {letterUnit.UnitIndex}, " +
+                    $"Versuche: {letterUnit.attempts}, " +
+                    $"Richtig%:  {letterUnit.SuccessPercentage}%, " +
+                    $"Richtige Buchstaben%: {letterUnit.SuccesCharacterPercentage}%, " +
+                    $"Richtige Wörter%: {letterUnit.SuccessWordPercentage}%";
+
 
             focusableUnit.indexTMP.text = letterUnit.UnitIndex.ToString();
             focusableUnit.lettersTMP.text = string.Join(", ", letterUnit.Letters);
@@ -86,7 +88,6 @@ namespace UI
             focusableUnit.lettersTMP.color = SettingsManager.Settings.PackageTextColor;
             focusableUnit.attemptsTMP.color = SettingsManager.Settings.PackageTextColor;
             focusableUnit.percentageTMP.color = SettingsManager.Settings.PackageTextColor;
-
 
             focusableUnit.letterUnit = letterUnit;
             return focusableUnit;
