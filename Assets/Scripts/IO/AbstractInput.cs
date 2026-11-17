@@ -16,6 +16,8 @@ public abstract class AbstractInput
 
     protected async void TemporarilyLockBinding(InputAction.CallbackContext context)
     {
+        if (SettingsManager.Settings.IgnoreDoubleInputTime <= 0) return;
+        
         InputAction action = context.action;
         
         
