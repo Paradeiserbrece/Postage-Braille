@@ -14,7 +14,6 @@ namespace IO
         public static Action LineSpacingChanged;
         public static Action BrailleColorChanged;
         public static void InvokeAssistiveOutput(string s, AssistiveOutput.OutputType oType) => AssistiveOutput.Invoke(s, oType);
-
         public static void InvokeDefaultOutput(string s) => DefaultOutput.Invoke(s);
         public static void InvokeBrailleSizeChanged() => BrailleSizeChanged.Invoke();
         public static void InvokeDotSizeChanged() => DotSizeChanged.Invoke();

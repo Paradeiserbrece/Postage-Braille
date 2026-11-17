@@ -28,7 +28,7 @@ namespace Tutorial
             { TutorialFlow.State.AfterAnswerPicked, new TutorialKeymap(false, false, true, true) },
             { TutorialFlow.State.FirstSwitchPackButton, new TutorialKeymap(false, false, false, true) },
             { TutorialFlow.State.PackagePickerMenuNavigation, new TutorialKeymap(true, true, false, false) },
-            { TutorialFlow.State.OnSelectedUnit, new TutorialKeymap(false, false, true, true) },
+            { TutorialFlow.State.OnDeleteButton, new TutorialKeymap(false, false, true, true) },
             { TutorialFlow.State.AfterUnitPicked, new TutorialKeymap(true, true, true, true) },
             { TutorialFlow.State.AfterPackageScreen, new TutorialKeymap(false, false, true, false) },
             { TutorialFlow.State.GameMenuNavigation, new TutorialKeymap(true, true, false, true) },

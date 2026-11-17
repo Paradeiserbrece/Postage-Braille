@@ -31,7 +31,7 @@ namespace Tutorial
             AfterAnswerPicked,
             FirstSwitchPackButton,
             PackagePickerMenuNavigation,
-            OnSelectedUnit,
+            OnDeleteButton,
             AfterUnitPicked,
             AfterPackageScreen,
             GameMenuNavigation,
@@ -243,15 +243,16 @@ namespace Tutorial
             }
         }
 
-        public void SaveButton()
+        public void DeleteButton()
         {
             switch (currentState)
             {
                 case State.PackagePickerMenuNavigation:
-                    TutorialOutputs.FirstSaveButtonOutput();
+                    currentState = State.OnDeleteButton;
+                    TutorialOutputs.FirstDeleteButtonOutput();
                     break;
                 case State.AfterUnitPicked:
-                    TutorialOutputs.SecondSaveButtonOutput();
+                    TutorialOutputs.SecondDeleteButtonOutput();
                     break;
             }
         }
@@ -261,10 +262,6 @@ namespace Tutorial
             switch (currentState)
             {
                 case State.PackagePickerMenuNavigation:
-                    currentState = State.OnSelectedUnit;
-                    TutorialOutputs.FirstSelectedUnitOutput();
-                    break;
-                case State.OnSelectedUnit:
                     TutorialOutputs.FirstSelectedUnitOutput();
                     break;
                 case State.AfterUnitPicked:
@@ -277,9 +274,9 @@ namespace Tutorial
         {
             switch (currentState)
             {
-                case State.OnSelectedUnit:
-                    TutorialOutputs.FirstUnitpickerOutput();
+                case State.OnDeleteButton:
                     currentState = State.AfterUnitPicked;
+                    TutorialOutputs.FirstUnitpickerOutput();
                     break;
                 case State.AfterUnitPicked:
                     TutorialOutputs.SecondUnitpickerOutput();

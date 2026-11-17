@@ -250,17 +250,6 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "4b873958-caf9-44f5-a955-b29d608f350f",
-                    "path": "<Keyboard>/f1",
-                    "interactions": "Press",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Schriftgröße erhöhen",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "d4299620-add1-469b-9285-ac488a1f6271",
                     "path": "<Keyboard>/f2",
                     "interactions": "",
@@ -2009,6 +1998,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Popup anzeigen",
+                    "type": "Button",
+                    "id": "0ea47d5f-8e42-4a1e-9951-c0c20adfa04f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -2031,6 +2029,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "any",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "422ef236-cb5a-45f3-b825-aa37ed8bbdf5",
+                    "path": "<Keyboard>/f1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Popup anzeigen",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "055640cf-2c29-4124-915b-ab81a83ff8d2",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Popup anzeigen",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

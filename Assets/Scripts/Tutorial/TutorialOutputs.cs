@@ -16,17 +16,19 @@ namespace Tutorial
     /// </summary>
     public static class TutorialOutputs
     {
+        private static string outputText = "";
+
         public static string FirstLetterOutput()
         {
-            string outputText =
-                "Willkommen zum Braille Lernprogramm Postage Braille! Die Einführung kann man mit der Escape-Taste überspringen. Das ist der Spiel Bildschirm. Am Anfang ist immer der Brief ausgewählt. Dieser beinhaltet die aktuelle Frage. Drücke die Tabulator taste um zu den Antwortmöglichkeiten zu gelangen.";
+            outputText =
+                "Willkommen zum Braille Lernprogramm Postage Braille! Die Einführung kann man mit der Escape-Taste überspringen. Der ausgegebene und oben dargestellte Text kann jederzeit mit der Leertaste oder F1 Taste in einem separaten Fenster angezeigt werden. Du befindest dich gerade am Spiel Bildschirm. Am Anfang ist immer der Brief ausgewählt. Dieser beinhaltet die aktuelle Frage. Drücke die Tabulator taste um zu den Antwortmöglichkeiten zu gelangen.";
             Output(outputText);
             return outputText;
         }
 
         public static string FirstAnswerOutput()
         {
-            string outputText =
+            outputText =
                 "Das ist die erste Antwortmöglichkeit. Mit Pfeiltaste rechts und Pfeiltaste links kann man die Antworten navigieren. Wähle doch mal die zweite Antwort aus.";
             Output(outputText);
             return outputText;
@@ -34,14 +36,14 @@ namespace Tutorial
 
         public static string SecondAnswerFocus()
         {
-            string outputText = "Das ist die Zweite Antwort. Mit der Enter-Taste kannst du die Antwort bestätigen. ";
+            outputText = "Das ist die Zweite Antwort. Mit der Enter-Taste kannst du die Antwort bestätigen. Probier es gleich mal aus!";
             Output(outputText);
             return outputText;
         }
 
         public static string SecondAnswerSubmit()
         {
-            string outputText =
+            outputText =
                 "Du hast die Antwort bestätigt und bekommst danach eine Rückmeldung! Wenn eine Rückmeldung angezeigt wird kannst du eine beliebige Taste drücken um fortzufahren. Drücke auch jetzt eine beliebige Taste um fortzufahren.";
             Output(outputText);
             return outputText;
@@ -49,7 +51,7 @@ namespace Tutorial
 
         public static string ThirdAnswerOutput()
         {
-            string outputText =
+            outputText =
                 "Das ist die Dritte Antwort. Es gibt immer drei Antwortmöglichkeiten. Gehe doch zur Zweiten zurück. Nutze dafür die linke Pfeiltaste";
             Output(outputText);
             return outputText;
@@ -57,7 +59,7 @@ namespace Tutorial
 
         public static string SecondLetterOutput()
         {
-            string outputText =
+            outputText =
                 "Nach beantworten der Frage kommt man zum Brief zurück. Verwende die Tabulator Taste um zum Menü zu gelangen.";
             Output(outputText);
             return outputText;
@@ -65,14 +67,14 @@ namespace Tutorial
 
         public static string SecondFirstAnswerOutput()
         {
-            string outputText = "Das ist die erste Antwortmöglichkeit. Drücke die Tabulator-Taste erneut.";
+            outputText = "Das ist die erste Antwortmöglichkeit. Drücke die Tabulator-Taste erneut.";
             Output(outputText);
             return outputText;
         }
 
         public static string FirstSwitchPackButtonOutput()
         {
-            string outputText =
+            outputText =
                 "Das ist die Spielmenü-Leiste. Zuerst ist der \"Einheit Auswählen\" Knopf ausgewählt. Drücke die Enter-Taste um eine andere Einheit auszuwählen.";
             Output(outputText);
             return outputText;
@@ -80,67 +82,69 @@ namespace Tutorial
 
         public static string FirstPackageBackButtonOutput()
         {
-            string outputText =
-                "Auf diesem Bildschirm kannst du die Einheiten auswählen. Am anfang ist der Zurück Knopf ausgewählt. Mit den Pfeiltasten kannst du im Menü navigieren.";
-            Output(outputText);
-            return outputText;
-        }
-
-        public static string FirstSaveButtonOutput()
-        {
-            string outputText =
-                "Dieser Knopf speichert deinen Fortschritt. Vergiss nicht deinen Fortschritt zu Speichern.";
+            outputText =
+                "Auf diesem Bildschirm kannst du die Einheiten auswählen. Am anfang ist der Zurück Knopf ausgewählt. Mit den Pfeiltasten kannst du im Menü navigieren. Navigiere zum nächsten Knopf mit Pfeiltaste rechts.";
             Output(outputText);
             return outputText;
         }
 
         public static string FirstSelectedUnitOutput()
         {
-            string outputText =
-                "Hier kannst du die ausgewählte einheit Überprüfen. Das sind alle Buttons in der Menüleiste. Mit der Tabulator-Taste wechselst du auf die Einheitenliste.";
+            outputText =
+                "Hier kannst du die ausgewählte einheit Überprüfen. Navigiere zum nächsten Knopf mit Pfeiltaste rechts.";
+            Output(outputText);
+            return outputText;
+        }
+
+
+        public static string FirstDeleteButtonOutput()
+        {
+            outputText =
+                "Dieser Knopf löscht deinen Fortschritt falls du deinen Speicherstand zurücksetzen willst. Das sind alle Buttons in der Menüleiste. Mit der Tabulator-Taste wechselst du auf die Einheitenliste.";
             Output(outputText);
             return outputText;
         }
 
         public static string FirstUnitpickerOutput()
         {
-            string outputText =
-                "Das ist die Einheitenliste. Mit der Enter-Taste kann man eine Einheit auswählen. Versuche jetzt selbstständig zum Spielbildschirm zurück zu navigierten.";
+            outputText =
+                "Das ist die Einheitenliste. Mit der Enter-Taste kann man eine Einheit auswählen. Versuche jetzt selbstständig zum Spielbildschirm zurück zu navigieren. Vergiss nicht: Mit der Tabulator Taste wechselst du in das Menü und mit den Pfeiltasten navigierst du im Untermenü. Mit Enter kannst du die Aktion ausführen.";
             Output(outputText);
             return outputText;
         }
 
         public static string SecondUnitpickerOutput()
         {
-            string outputText = "Einheit eins. In der Einführung kannst du nur diese Auswählen.";
+            outputText =
+                "Einheit eins. In der Einführung kannst du nur diese Auswählen. Versuche jetzt selbstständig zum Spielbildschirm zurück zu navigieren. Vergiss nicht: Mit der Tabulator Taste wechselst du in das Menü und mit den Pfeiltasten navigierst du im Untermenü. Mit Enter kannst du die Aktion ausführen.";
             Output(outputText);
             return outputText;
         }
 
         public static string SecondPackageBackButtonOutput()
         {
-            string outputText = "Zurück";
+            outputText = "Zurück";
             Output(outputText);
             return outputText;
         }
 
-        public static string SecondSaveButtonOutput()
+        public static string SecondDeleteButtonOutput()
         {
-            string outputText = "Fortschritt speichern.";
+            outputText = "Fortschritt löschen.";
             Output(outputText);
             return outputText;
         }
 
         public static string SecondSelectedUnitOutput()
         {
-            string outputText = "Das ist die ausgewählte Einheit. In der Einführung gibt es nur Einheit eins.";
+            outputText = "Das ist die ausgewählte Einheit. In der Einführung gibt es nur Einheit eins.";
             Output(outputText);
             return outputText;
         }
 
         public static string ThirdLetterOutput()
         {
-            string outputText =
+            outputText =
                 "Du bist nun wieder am Spielbildschirm. Du bist nun mit dem Hauptteil des Spiels vertraut, es gibt aber noch eine andere Funktion. Navigiere in die menüleiste.";
             Output(outputText);
             return outputText;
@@ -148,7 +152,7 @@ namespace Tutorial
 
         public static string SecondSwitchPackButtonOutput()
         {
-            string outputText =
+            outputText =
                 "Du bist nun wieder in der Menüleiste des Spielbildschirms. Den ersten Knopf kennst du bereits, mit diesem sind wir zum Bildschirm zum auswählen von Einheiten gekommen. Navigiere zu den anderen Knöpfen um zu lernen was sie können.";
             Output(outputText);
             return outputText;
@@ -156,7 +160,7 @@ namespace Tutorial
 
         public static string ThirdSwitchPackButtonOutput()
         {
-            string outputText =
+            outputText =
                 "Dieser Knopf bringt dich in den Bildschirm zum Auswählen von Einheiten, navigiere zum Einstellungen Bildschirm um die Einleitung fortzufahren.";
             Output(outputText);
             return outputText;
@@ -164,7 +168,7 @@ namespace Tutorial
 
         public static string QuestionDirectionOutput()
         {
-            string outputText =
+            outputText =
                 "Dieser Knopf ändert die Fragerichtung. Anfangs ist die Frage in Braille dargestellt und die Antworten durch Schwarzschrift und Audio. Nach drücken des Knopfes wird zur umgekehrten Fragerichtung gewechselt.";
             Output(outputText);
             return outputText;
@@ -172,7 +176,7 @@ namespace Tutorial
 
         public static string QuestionModeOutput()
         {
-            string outputText =
+            outputText =
                 "Mit diesem Knopf änderst du die Art der Fragen. Anfangs werden einzelne Buchstaben der aktuellen Einheit abgefragt. Alternativ kann man Wörter aus allen gelernten Buchstaben abfragen. Vergiss nicht hin und wieder die Art zu wechseln.";
             Output(outputText);
             return outputText;
@@ -180,7 +184,7 @@ namespace Tutorial
 
         public static string SettingsOutput()
         {
-            string outputText =
+            outputText =
                 "Dieser Knopf führt zum Einstellungsmenü. Drücke die Entertaste um zu den Einstellungen zu gelangen.";
             Output(outputText);
             return outputText;
@@ -188,7 +192,7 @@ namespace Tutorial
 
         public static string FirstRebindBackOutput()
         {
-            string outputText =
+            outputText =
                 "Du befindest dich jetzt im Einstellungsbildschirm. Anfangs ist der Zurück Knopf ausgewählt. Navigiere doch durch die anderen Menüpunkte.";
             Output(outputText);
             return outputText;
@@ -196,7 +200,7 @@ namespace Tutorial
 
         public static string NavigationOutput()
         {
-            string outputText =
+            outputText =
                 "Hiermit öffnest du die Tastenbelegung für die Navigation. Um eine Tastenbelegung zu ändern wähle in der Liste die zu ändernde Aktion aus und drücke die Enter-Taste. Danach drücke die gewünschte Taste. Die Aktion wird von nun an mit der neuen Taste ausgelöst. Das Ändern der Tastenbelegung ist in der Einführung nicht möglich.";
             Output(outputText);
             return outputText;
@@ -204,7 +208,7 @@ namespace Tutorial
 
         public static string BrailleSettingsOutput()
         {
-            string outputText =
+            outputText =
                 "Hiermit öffnest du die Tastenbelegung für die Braille Darstellung. Das ändern der Tastenbelegung erfolgt gleich als bei der Navigation.";
             Output(outputText);
             return outputText;
@@ -212,7 +216,7 @@ namespace Tutorial
 
         public static string PerkinsBraillerOutput()
         {
-            string outputText =
+            outputText =
                 "Hiermit öffnest du die Tastenbelegung für den Perkinsbrailler. Anfangs sind die Perkinsbraillertasten SDF und JKL an der Tastatur.";
             Output(outputText);
             return outputText;
@@ -220,7 +224,7 @@ namespace Tutorial
 
         public static string ResetOutput()
         {
-            string outputText =
+            outputText =
                 "Dieser Knopf setzt alle Tastenbelegungen auf die Standardeinstellungen zurück. Alternativ kann man auch die Home-Taste oder Pos1-Taste drücken. Jetzt bist du mit der Navigation vertraut. Gehe doch auf den Spielbildschirm zurück.";
             Output(outputText);
             return outputText;
@@ -228,14 +232,14 @@ namespace Tutorial
 
         public static string SecondRebindBackOutput()
         {
-            string outputText = "Zurück";
+            outputText = "Zurück";
             Output(outputText);
             return outputText;
         }
 
         public static string RebindBackOutputSubmit()
         {
-            var outputText =
+            outputText =
                 "Super! Du hast die Einführung abgeschlossen! Du kommst jetzt zum Spielbildschirm zurück und kannst ab jetzt frei navigieren. Du kannst die Einführung mit dem Knopf in dem Menüband jederzeit erneut starten. Viel Spaß beim Lernen. Drücke eine beliebige Taste zum Fortfahren.";
             Output(outputText);
             return outputText;
@@ -243,14 +247,14 @@ namespace Tutorial
 
         public static string InvalidKeyPressOutput()
         {
-            string outputText = "Knopf in diesem Einführungsabschnitt deaktiviert.";
-            Output(outputText);
+            Output("Knopf in diesem Einführungsabschnitt deaktiviert. " + outputText);
             return outputText;
         }
 
         public static string SkipTutorial()
         {
-            var outputText = "Einführung wird Übersprungen. Drücke eine beliebige Taste zum Fortfahren.";
+            outputText =
+                "Einführung wird Übersprungen. Du kannst sie jederzeit mit dem Knopf im Menüband erneut starten. Drücke eine beliebige Taste zum Fortfahren.";
             Output(outputText);
             return outputText;
         }
