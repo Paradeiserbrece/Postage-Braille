@@ -3561,7 +3561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 876854642531152436, guid: 8f364f5787df62946942082f71a4b2da, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -103.901
+      value: -103.90088
       objectReference: {fileID: 0}
     - target: {fileID: 2352037549065257747, guid: 8f364f5787df62946942082f71a4b2da, type: 3}
       propertyPath: m_Pivot.x
@@ -5355,7 +5355,7 @@ MonoBehaviour:
     characterSuccesses: 0
     wordSuccesses: 0
   currentLanguage: 0
-  packageProgress: 1
+  packageProgress: 0
 --- !u!1 &1964044111
 GameObject:
   m_ObjectHideFlags: 0

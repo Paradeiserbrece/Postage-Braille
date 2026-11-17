@@ -1,3 +1,4 @@
+using System;
 using Braille;
 using UI;
 using UnityEngine.InputSystem;
@@ -21,7 +22,8 @@ namespace IO
 
         private void SetPopupText(string arg1, AssistiveOutput.OutputType arg2)
         {
-            _popupText = arg1;
+            if (arg2 is AssistiveOutput.OutputType.Both or AssistiveOutput.OutputType.Speak) _popupText = arg1;
+            else _popupText = "";
         }
 
         
@@ -50,6 +52,7 @@ namespace IO
         
         private void OnShowPopup(InputAction.CallbackContext obj)
         {
+            if (String.IsNullOrEmpty(_popupText)) return;
             NativePopup.Show(_popupText);
             
         }
