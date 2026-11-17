@@ -51,6 +51,13 @@ namespace Tutorial
             Actions.TutorialNavigation.zurück.started += OnPrev;
             Actions.TutorialNavigation.bestätigen.started += OnConfirm;
             Actions.TutorialNavigation.escape.started += OnEscape;
+            
+            Actions.TutorialNavigation.UILayerwechseln.started += TemporarilyLockBinding;
+            Actions.TutorialNavigation.weiter.started += TemporarilyLockBinding;
+            Actions.TutorialNavigation.zurück.started += TemporarilyLockBinding;
+            Actions.TutorialNavigation.bestätigen.started += TemporarilyLockBinding;
+            Actions.TutorialNavigation.escape.started += TemporarilyLockBinding;
+            
             Actions.TutorialNavigation.Enable();
         }
 
@@ -61,11 +68,19 @@ namespace Tutorial
             Actions.TutorialNavigation.zurück.started -= OnPrev;
             Actions.TutorialNavigation.bestätigen.started -= OnConfirm;
             Actions.TutorialNavigation.escape.started -= OnEscape;
+            
+            Actions.TutorialNavigation.UILayerwechseln.started -= TemporarilyLockBinding;
+            Actions.TutorialNavigation.weiter.started -= TemporarilyLockBinding;
+            Actions.TutorialNavigation.zurück.started -= TemporarilyLockBinding;
+            Actions.TutorialNavigation.bestätigen.started -= TemporarilyLockBinding;
+            Actions.TutorialNavigation.escape.started -= TemporarilyLockBinding;
+            
             Actions.TutorialNavigation.Disable();
         }
 
         private void OnNext(InputAction.CallbackContext context)
         {
+            
             if (CurrentStateKeymap?.Right == true)
             {
                 SceneControl.CurrentUI.HighlightNextOption();

@@ -24,6 +24,18 @@ namespace IO
             Actions.Navigation.weiter.started += OnNext;
             Actions.Navigation.zurück.started += OnPrev;
             Actions.Navigation.bestätigen.started += OnConfirm;
+            
+            Actions.Navigation.antwort1.started += TemporarilyLockBinding;
+            Actions.Navigation.antwort2.started += TemporarilyLockBinding;
+            Actions.Navigation.antwort3.started += TemporarilyLockBinding;
+            Actions.Navigation.antwort4.started += TemporarilyLockBinding;
+            Actions.Navigation.antwort5.started += TemporarilyLockBinding;
+            Actions.Navigation.antwort6.started += TemporarilyLockBinding;
+            Actions.Navigation.UILayerwechseln.started += TemporarilyLockBinding;
+            Actions.Navigation.weiter.started += TemporarilyLockBinding;
+            Actions.Navigation.zurück.started += TemporarilyLockBinding;
+            Actions.Navigation.bestätigen.started += TemporarilyLockBinding;
+            
             Actions.Navigation.Enable();
         }
 
@@ -39,6 +51,18 @@ namespace IO
             Actions.Navigation.weiter.started -= OnNext;
             Actions.Navigation.zurück.started -= OnPrev;
             Actions.Navigation.bestätigen.started -= OnConfirm;
+            
+            Actions.Navigation.antwort1.started -= TemporarilyLockBinding;
+            Actions.Navigation.antwort2.started -= TemporarilyLockBinding;
+            Actions.Navigation.antwort3.started -= TemporarilyLockBinding;
+            Actions.Navigation.antwort4.started -= TemporarilyLockBinding;
+            Actions.Navigation.antwort5.started -= TemporarilyLockBinding;
+            Actions.Navigation.antwort6.started -= TemporarilyLockBinding;
+            Actions.Navigation.UILayerwechseln.started -= TemporarilyLockBinding;
+            Actions.Navigation.weiter.started -= TemporarilyLockBinding;
+            Actions.Navigation.zurück.started -= TemporarilyLockBinding;
+            Actions.Navigation.bestätigen.started -= TemporarilyLockBinding;
+            
             Actions.Navigation.Disable();
         }
 
