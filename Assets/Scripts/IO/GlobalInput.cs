@@ -29,6 +29,10 @@ namespace IO
         {
             Actions.Constants.Tastenbelegungzurücksetzen.started += OnReset;
             Actions.Constants.Popupanzeigen.started += OnShowPopup;
+
+            Actions.Constants.Tastenbelegungzurücksetzen.started += TemporarilyLockBinding;
+            Actions.Constants.Popupanzeigen.started += TemporarilyLockBinding;
+
             Actions.Constants.Enable();
         }
 
@@ -36,7 +40,11 @@ namespace IO
         public override void Disable()
         {
             Actions.Constants.Tastenbelegungzurücksetzen.started -= OnReset;
-            Actions.Constants.Popupanzeigen.started += OnShowPopup;
+            Actions.Constants.Popupanzeigen.started -= OnShowPopup;
+
+            Actions.Constants.Tastenbelegungzurücksetzen.started -= TemporarilyLockBinding;
+            Actions.Constants.Popupanzeigen.started -= TemporarilyLockBinding;
+
             Actions.Constants.Disable();
         }
         

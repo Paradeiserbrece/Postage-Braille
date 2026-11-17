@@ -11,6 +11,7 @@ namespace Settings
         public AssistiveOutput.OutputType StandardOutputType = AssistiveOutput.OutputType.Both;
         public UITextObject.DisplayMode StandardDisplayMode = UITextObject.DisplayMode.Braille;
         public bool StartTutorial = true;
+        public int IgnoreDoubleInputTime = 0; //in milliseconds
 
         // Braille size
         public float MinBrailleSize = 30f;

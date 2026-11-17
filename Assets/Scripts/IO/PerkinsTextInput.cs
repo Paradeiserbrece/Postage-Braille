@@ -33,6 +33,21 @@ namespace IO
             Actions.PerkinsBrailer.Punkt6.canceled += OnDot5Canceled;
             Actions.PerkinsBrailer.Rücktaste.started += OnDeleteCharacter;
             Actions.PerkinsBrailer.Leertaste.started += OnSpace;
+            
+            Actions.PerkinsBrailer.Punkt1.started += TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt1.canceled += TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt2.started += TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt2.canceled += TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt3.started += TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt3.canceled += TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt4.started += TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt4.canceled += TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt5.started += TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt5.canceled += TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt6.started += TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt6.canceled += TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Rücktaste.started += TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Leertaste.started += TemporarilyLockBinding;
 
             StringBuilder actionsString = new StringBuilder();
             actionsString.Append("action string: \n");
@@ -60,6 +75,21 @@ namespace IO
             Actions.PerkinsBrailer.Punkt6.canceled -= OnDot5Canceled;
             Actions.PerkinsBrailer.Rücktaste.started -= OnDeleteCharacter;
             Actions.PerkinsBrailer.Leertaste.started -= OnSpace;
+            
+            Actions.PerkinsBrailer.Punkt1.started -= TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt1.canceled -= TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt2.started -= TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt2.canceled -= TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt3.started -= TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt3.canceled -= TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt4.started -= TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt4.canceled -= TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt5.started -= TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt5.canceled -= TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt6.started -= TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Punkt6.canceled -= TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Rücktaste.started -= TemporarilyLockBinding;
+            Actions.PerkinsBrailer.Leertaste.started -= TemporarilyLockBinding;
 
             Actions.PerkinsBrailer.Disable();
         }
