@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
+using Braille;
 using IO;
+using Settings;
 using UI;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -17,19 +19,18 @@ public class GameManager : MonoBehaviour
     }
 
     public GameState currentState;
-    private Action<string, float> _invoke;
 
     private void Awake()
     {
         Instance = this;
-        _invoke = Invoke;
     }
 
     private IEnumerator Start()
     {
         yield return new WaitUntil(() => SceneControl.Instance != null &&
                                          QuestionManager.Instance != null);
-        StartGame();
+        if (SettingsManager.Settings.StartTutorial) SceneControl.StartTutorial();
+        else StartGame();
     }
 
     private void StartGame()
@@ -60,6 +61,6 @@ public class GameManager : MonoBehaviour
         QuestionManager.Instance.ShowFeedback(correct);
         QuestionManager.Instance.letterObject.HideLetter();
 
-        _invoke(nameof(NextQuestion), 1.5f);
+        _ = AssistiveOutput.WaitForKeyDown(NextQuestion);
     }
 }

@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: 4982cf079b7ab3744b7a8a48cf687485
-  - enabled: 1
     path: Assets/Scenes/LetterSortingScene.unity
     guid: 02149d62029f7564a98074fab0dc00fb
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 4982cf079b7ab3744b7a8a48cf687485
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

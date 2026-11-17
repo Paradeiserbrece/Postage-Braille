@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using Braille;
 using IO;
 using Settings;
@@ -14,7 +16,7 @@ namespace UI
         [SerializeField] private GridLayoutGroup _layoutGroup;
         [SerializeField] protected TextMeshProUGUI _textMeshPro;
 
-        public DisplayMode CurrentDisplayMode { get; private set; } = GlobalSettings.standardDisplayMode;
+        public DisplayMode CurrentDisplayMode { get; private set; }
 
         public enum DisplayMode
         {
@@ -22,11 +24,6 @@ namespace UI
             InkPrint
         }
 
-        void Awake()
-        {
-            UpdateSpacing();
-            UpdateCharacterSize();
-        }
 
         private void OnEnable()
         {
@@ -44,6 +41,15 @@ namespace UI
             IOEventManager.BrailleColorChanged -= UpdateDotColor;
         }
 
+        private IEnumerator Start()
+        {
+            yield return new WaitUntil(() => SettingsManager.Settings != null);
+
+            CurrentDisplayMode = SettingsManager.Settings.StandardDisplayMode;
+            UpdateSpacing();
+            UpdateCharacterSize();
+        }
+
         public void SetDisplayMode(DisplayMode displayMode)
         {
             if (displayMode == DisplayMode.Braille)
@@ -52,6 +58,7 @@ namespace UI
                 {
                     character.gameObject.SetActive(true);
                 }
+
                 _textMeshPro.enabled = false;
             }
             else if (displayMode == DisplayMode.InkPrint)
@@ -60,6 +67,7 @@ namespace UI
                 {
                     character.gameObject.SetActive(false);
                 }
+
                 _textMeshPro.enabled = true;
             }
             else
@@ -67,6 +75,7 @@ namespace UI
                 Debug.LogWarning("Tried to switch to unsupported display mode.");
                 return;
             }
+
             CurrentDisplayMode = displayMode;
         }
 
@@ -77,14 +86,15 @@ namespace UI
 
         private void UpdateSpacing()
         {
-            _layoutGroup.spacing = new Vector2(GlobalSettings.BrailleSpacing, GlobalSettings.LineSpacing);
-            _textMeshPro.characterSpacing = GlobalSettings.BrailleSpacing;
-            _textMeshPro.lineSpacing = GlobalSettings.LineSpacing;
+            _layoutGroup.spacing =
+                new Vector2(SettingsManager.Settings.BrailleSpacing, SettingsManager.Settings.LineSpacing);
+            _textMeshPro.characterSpacing = SettingsManager.Settings.BrailleSpacing;
+            _textMeshPro.lineSpacing = SettingsManager.Settings.LineSpacing;
         }
 
         private void UpdateCharacterSize()
         {
-            Vector2 scale = Vector2.one * GlobalSettings.BrailleSize;
+            Vector2 scale = Vector2.one * SettingsManager.Settings.BrailleSize;
             scale.x *= 2; //two dots horizontally
             scale.y *= 3; //three dots vertically
             _layoutGroup.cellSize = scale;
@@ -98,7 +108,7 @@ namespace UI
                 character.UpdateDotColor();
             }
 
-            _textMeshPro.color = GlobalSettings.BrailleColor;
+            _textMeshPro.color = SettingsManager.Settings.BrailleColor;
         }
 
         public void UpdateDotColor(Color color)

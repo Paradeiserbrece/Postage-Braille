@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using Utility;
 using Braille;
-using Serialization;
 
 namespace IO
 {
@@ -90,12 +89,15 @@ namespace IO
             }
             if (_actionLayerIndex >= 0) SceneControl.Instance.settingsUI.RemoveLayer(_actionLayerIndex);
             _actionLayer = new UILayer("ActionLayer", buttons);
-            _actionLayerIndex = SceneControl.Instance.settingsUI.AddLayer(_actionLayer);
             
-            Canvas.ForceUpdateCanvases();
+            //Canvas.ForceUpdateCanvases();
             _inputActionsPanel.currentlyDisplayedActionMap = actionMap;
             _inputActionsPanel.ScrollToTop();
+            
+            _actionLayerIndex = SceneControl.Instance.settingsUI.AddLayer(_actionLayer);
         }
+        
+        
 
         public void RebindAction(InputAction inputAction, FocusableRebindOption button)
         {
@@ -103,7 +105,9 @@ namespace IO
             {
                 _rebinding = true;
                 IOEventManager.AssistiveOutput("Neuen Knopf drücken", AssistiveOutput.OutputType.Both);
-                MultimodalInputManager.Instance.DisableInput(MultimodalInputManager.InputType.Navigation);
+                
+                inputAction.Disable();
+                Debug.Log("disableing worked: " );
                 button.SetBindingText("Click any button");
                 _rebindingOperation =
                     inputAction.PerformInteractiveRebinding().OnComplete(operation => RebindCompleted(inputAction, button)).Start();
@@ -113,7 +117,7 @@ namespace IO
         {
             _rebindingOperation.Dispose();
             button.SetBindingText(inputAction.bindings[0].effectivePath);
-            MultimodalInputManager.Instance.EnableInput(MultimodalInputManager.InputType.Navigation);
+            inputAction.Enable();
             _rebinding = false;
             IOEventManager.AssistiveOutput("Neuer knopf ist " + inputAction.bindings[0].effectivePath, AssistiveOutput.OutputType.Both);
 
@@ -136,12 +140,13 @@ namespace IO
             }
         }
         
-        public static void ResetRebinds()
+        public void ResetRebinds()
         {
             MultimodalInputManager.Instance.Actions.RemoveAllBindingOverrides();
             PlayerPrefs.DeleteKey("Rebinds");
 
             PlayerPrefs.Save();
+            ReListAllActions();
         }
     }
 }

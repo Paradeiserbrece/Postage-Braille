@@ -1,7 +1,9 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Braille;
 using IO;
+using Settings;
 using UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -114,13 +116,12 @@ namespace Tutorial
             switch (currentState)
             {
                 case State.PickAnswer:
-                    var outputText = TutorialOutputs.SecondAnswerSubmit();
-                    AssistiveOutput.WaitForSpeakingToFinish(() =>
+                    TutorialOutputs.SecondAnswerSubmit();
+                    AssistiveOutput.WaitForKeyDown(() =>
                         {
                             currentState = State.AfterAnswerPicked;
                             UIManager.Instance.SwitchLayer((int)Layer.Letter);
-                        },
-                        outputText);
+                        });
 
                     break;
             }
@@ -315,13 +316,19 @@ namespace Tutorial
                     currentState = State.SettingsMenuNavigation;
                     break;
                 case State.SettingsMenuNavigation:
-                    var text = TutorialOutputs.RebindBackOutputSubmit();
+                    TutorialOutputs.RebindBackOutputSubmit();
 
-                    MultimodalInputManager.Instance?.DisableInput(MultimodalInputManager.InputType.Tutorial);
-                    AssistiveOutput.WaitForSpeakingToFinish(() => SceneManager.LoadScene("Scenes/LetterSortingScene"),
-                        text);
+                    FinishTutorial();
                     break;
             }
+        }
+
+        public void FinishTutorial()
+        {
+            MultimodalInputManager.Instance?.DisableInput(MultimodalInputManager.InputType.Tutorial);
+            SettingsManager.Settings.StartTutorial = false;
+            SettingsManager.Instance.SaveSettings();
+            AssistiveOutput.WaitForKeyDown(() => SceneManager.LoadScene("Scenes/LetterSortingScene", LoadSceneMode.Single));
         }
 
         public void Navigation()

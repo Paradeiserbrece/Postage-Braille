@@ -1,8 +1,14 @@
 using System;
+using System.Collections;
 using System.Threading.Tasks;
 using DavyKager;
 using IO;
+using Settings;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 // Tolk accessibility wrapper
 
@@ -12,6 +18,14 @@ namespace Braille
 {
     public class AssistiveOutput : MonoBehaviour
     {
+        [SerializeField] private TextMeshProUGUI visualOutputText;
+
+        private const float fontCharacterWidth = 0.63197183098591549295774647887324f;
+        private string _resetTextPos;
+        private string _startTextScrolling;
+
+        private static InputAction _anyKey;
+
         public enum OutputType
         {
             Braille,
@@ -24,6 +38,9 @@ namespace Braille
             IOEventManager.AssistiveOutput += Output;
             IOEventManager.DefaultOutput += OnDefaultOutput;
         }
+
+        private Vector2 endTextPosX;
+        private Vector2 defaultTextPosX;
 
         public void Start()
         {
@@ -41,6 +58,14 @@ namespace Braille
 
             if (Tolk.HasBraille())
                 Debug.Log("This screen reader driver supports braille.");
+
+            defaultTextPosX = endTextPosX = visualOutputText.transform.localPosition;
+            _anyKey = MultimodalInputManager.Instance.Actions.Constants.any;
+        }
+
+        private void Update()
+        {
+            MoveAssistiveOutputTextToEndPos();
         }
 
         public void OnDestroy()
@@ -65,30 +90,104 @@ namespace Braille
         // <param name="type">If the text is supposed to be output in speech, in braille, or both.</param>
         public void Output(string text, OutputType type = OutputType.Both)
         {
+            visualOutputText.text = "";
             Debug.Log("Tolk Output (" + type + "): " + text);
 
-            bool success = false;
-
+            Tolk.Silence();
             switch (type)
             {
                 case OutputType.Braille:
-                    Tolk.Silence();
-                    success = Tolk.Braille(text);
+                    visualOutputText.text = "Braille wird nicht vorgelesen.";
+                    Tolk.Braille(text);
+                    if (SettingsManager.Settings.AdditionalAudioOutput) Tolk.Speak("Braille wird nicht vorgelesen.");
                     break;
                 case OutputType.Speak:
-                    Tolk.Silence();
-                    success = Tolk.Speak(text);
+                    visualOutputText.text = text;
+                    Tolk.Speak(text);
+                    break;
+                case OutputType.Both:
+                    visualOutputText.text = text;
+                    Tolk.Output(text);
                     break;
                 default:
-                    success = Tolk.Output(text);
-                    break;
+                    throw new ArgumentOutOfRangeException(nameof(type), type, null);
             }
 
-            //if (!success)
-            //    Debug.LogWarning("Failed to output text via Tolk.");
+            visualOutputText.transform.localPosition = defaultTextPosX;
+            _scrollText = false;
+            
+            _textScrollingStartTime = Time.time;
+            StartCoroutine(StartTextScrolling());
+            CalculateOutputTextPos();
         }
 
-        private static readonly float TimePerCharacter = 0.08f;
+
+        /// <summary>
+        /// Calculates the endposition of <see cref="visualOutputText"/> based on _text.text.length, the fontsize and the
+        /// <see cref="fontCharacterWidth"/> such that the last character of _text.text is just visible in the TextMeshProUGUI
+        ///
+        /// If the text is not overflowing its boundaries, <see cref="endTextPosX"/> is set to <see cref="defaultTextPosX"/>
+        /// </summary>
+        private void CalculateOutputTextPos()
+        {
+            if (visualOutputText.rectTransform.sizeDelta.x < fontCharacterWidth * visualOutputText.text.Length * visualOutputText.fontSize)
+            {
+                // Overflowing
+                endTextPosX = new Vector2(
+                    Math.Abs(visualOutputText.rectTransform.sizeDelta.x) - fontCharacterWidth * visualOutputText.fontSize * visualOutputText.text.Length,
+                    visualOutputText.transform.localPosition.y);
+            }
+            else
+            {
+                endTextPosX = defaultTextPosX;
+            }
+        }
+
+        private bool _resettingToDefaultPosition = false;
+        private bool _scrollText = false;
+
+        //TODO: Put all the text related stuff in its own mono-behaviour so assistive output doesnt handle the text position
+        private void MoveAssistiveOutputTextToEndPos()
+        {
+            // If we reset to the default position, we wait for _textResetDelay seconds until we reset.
+            // we do not have to move the text anymore that time 
+            if (_resettingToDefaultPosition || !_scrollText) return;
+            
+            if (Vector2.Distance(visualOutputText.transform.localPosition, endTextPosX) > 0.1f)
+            {
+                visualOutputText.transform.localPosition = 
+                    Vector2.MoveTowards(visualOutputText.transform.localPosition, endTextPosX, SettingsManager.Settings.TextScrollSpeed * Time.deltaTime);
+            }
+            else
+            {
+                _resettingToDefaultPosition = true;
+                _scrollText = false;
+                _textResetDelayStartTime = Time.time;
+                StartCoroutine(ResetTextPos());
+            }
+        }
+
+        private float _textScrollingStartTime;
+        private IEnumerator StartTextScrolling()
+        {
+            yield return new WaitUntil(() => (Time.time >= (_textScrollingStartTime + SettingsManager.Settings.TextScrollDelay)));
+            _scrollText = true;
+        }
+
+        private float _textResetDelayStartTime;
+        
+        private IEnumerator ResetTextPos()
+        {
+            yield return new WaitUntil(() => (Time.time >= (_textResetDelayStartTime + SettingsManager.Settings.TextResetDelay)));
+            
+            visualOutputText.transform.localPosition = defaultTextPosX;
+            _resettingToDefaultPosition = false;
+
+            _textScrollingStartTime = Time.time;
+            StartCoroutine(StartTextScrolling());
+        }
+
+        private const float TimePerCharacter = 0.08f;
 
         /// <summary>
         /// Waits <see cref="TimePerCharacter"/> seconds per character of the given string before invoking the action
@@ -96,7 +195,7 @@ namespace Braille
         /// </summary>
         /// <param name="action">The action to be executed after assistive output has finished speaking</param>
         /// <param name="text">The text that is being spoken, needed to calculate speaking time for <see cref="Tolk"/></param>
-        public static async Task WaitForSpeakingToFinish(Action action, string text)
+        public static async Task WaitForSpeakingToFinish(Action action, string text, float timePerCharacter = TimePerCharacter)
         {
             if (Tolk.DetectScreenReader() == null)
             {
@@ -106,6 +205,21 @@ namespace Braille
 
             await Task.Delay(TimeSpan.FromSeconds(TimePerCharacter * text.Length));
             action?.Invoke();
+        }
+        
+        /// <summary>
+        /// Waits for any key to be pressed and then invokes the given action
+        /// </summary>
+        /// <param name="action">the action to be invoked</param>
+        /// <returns></returns>
+        public static async Awaitable WaitForKeyDown(Action action)
+        {
+            await Awaitable.NextFrameAsync();
+            while(!_anyKey.WasPressedThisFrame())
+            {
+                await Awaitable.NextFrameAsync();
+            }
+            action.Invoke();
         }
     }
 }

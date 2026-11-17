@@ -20,9 +20,9 @@ namespace UI
 
         private void Start()
         {
-            indexTMP.color = GlobalSettings.TextColor;
-            lettersTMP.color = GlobalSettings.PackageTextColor;
-            percentageTMP.color = GlobalSettings.PackageTextColor;
+            indexTMP.color = SettingsManager.Settings.TextColor;
+            lettersTMP.color = SettingsManager.Settings.PackageTextColor;
+            percentageTMP.color = SettingsManager.Settings.PackageTextColor;
         }
 
         public void ChangeLetterUnit(LetterUnit letterUnit)
@@ -33,17 +33,17 @@ namespace UI
             percentageTMP.text = letterUnit.SuccessPercentage + "%";
 
             text =
-                    $"Einheit     {letterUnit.UnitIndex},\n" +
-                    $"Buchstaben:  {string.Join(", ", letterUnit.Letters)},\n" +
-                    $"Versuche: {letterUnit.attempts},\n" +
-                    $"Erfolge:  {letterUnit.SuccessPercentage}%";
+                    $"Einheit: {letterUnit.UnitIndex}, " +
+                    $"Buchstaben:  {string.Join(", ", letterUnit.Letters)}, " +
+                    $"Versuche: {letterUnit.attempts}, " +
+                    $"Richtig%:  {letterUnit.SuccessPercentage}%";
         }
 
         public override void Focus()
         {
             if (text != null)
                 IOEventManager.InvokeAssistiveOutput("Derzeitig Aktive Einheit: " + text,
-                    GlobalSettings.standardOutputType);
+                    SettingsManager.Settings.StandardOutputType);
             border.enabled = true;
         }
 
@@ -51,7 +51,7 @@ namespace UI
         {
             if (text != null)
                 IOEventManager.InvokeAssistiveOutput("Derzeitig Aktive Einheit: " + text,
-                    GlobalSettings.standardOutputType);
+                    SettingsManager.Settings.StandardOutputType);
         }
     }
 }

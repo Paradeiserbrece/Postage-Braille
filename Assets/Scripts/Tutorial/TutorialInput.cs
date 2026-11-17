@@ -46,20 +46,20 @@ namespace Tutorial
 
         public override void Enable()
         {
-            Actions.TutorialNavigation.SwitchUILayer.started += OnSwitchUILayer;
-            Actions.TutorialNavigation.next.started += OnNext;
-            Actions.TutorialNavigation.prev.started += OnPrev;
-            Actions.TutorialNavigation.confirm.started += OnConfirm;
+            Actions.TutorialNavigation.UILayerwechseln.started += OnSwitchUILayer;
+            Actions.TutorialNavigation.weiter.started += OnNext;
+            Actions.TutorialNavigation.zurück.started += OnPrev;
+            Actions.TutorialNavigation.bestätigen.started += OnConfirm;
             Actions.TutorialNavigation.escape.started += OnEscape;
             Actions.TutorialNavigation.Enable();
         }
 
         public override void Disable()
         {
-            Actions.TutorialNavigation.SwitchUILayer.started -= OnSwitchUILayer;
-            Actions.TutorialNavigation.next.started -= OnNext;
-            Actions.TutorialNavigation.prev.started -= OnPrev;
-            Actions.TutorialNavigation.confirm.started -= OnConfirm;
+            Actions.TutorialNavigation.UILayerwechseln.started -= OnSwitchUILayer;
+            Actions.TutorialNavigation.weiter.started -= OnNext;
+            Actions.TutorialNavigation.zurück.started -= OnPrev;
+            Actions.TutorialNavigation.bestätigen.started -= OnConfirm;
             Actions.TutorialNavigation.escape.started -= OnEscape;
             Actions.TutorialNavigation.Disable();
         }
@@ -114,10 +114,8 @@ namespace Tutorial
 
         private void OnEscape(InputAction.CallbackContext context)
         {
-            var outputText = TutorialOutputs.SkipTutorial();
-            MultimodalInputManager.Instance?.DisableInput(MultimodalInputManager.InputType.Tutorial);
-            AssistiveOutput.WaitForSpeakingToFinish(() => SceneManager.LoadScene("Scenes/LetterSortingScene"),
-                outputText);
+            TutorialOutputs.SkipTutorial();
+            TutorialFlow.Instance.FinishTutorial();
         }
     }
 }

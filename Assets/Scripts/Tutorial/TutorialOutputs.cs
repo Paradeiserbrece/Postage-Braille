@@ -1,4 +1,5 @@
 ﻿using IO;
+using Settings;
 
 namespace Tutorial
 {
@@ -40,7 +41,8 @@ namespace Tutorial
 
         public static string SecondAnswerSubmit()
         {
-            string outputText = "Du hast die Antwort bestätigt und bekommst danach eine Rückmeldung!";
+            string outputText =
+                "Du hast die Antwort bestätigt und bekommst danach eine Rückmeldung! Wenn eine Rückmeldung angezeigt wird kannst du eine beliebige Taste drücken um fortzufahren. Drücke auch jetzt eine beliebige Taste um fortzufahren.";
             Output(outputText);
             return outputText;
         }
@@ -179,7 +181,7 @@ namespace Tutorial
         public static string SettingsOutput()
         {
             string outputText =
-                "Dieser Knopf führt zum Einstellungsmenü. Dücke die Entertaste um zu den Einstellungen zu gelangen.";
+                "Dieser Knopf führt zum Einstellungsmenü. Drücke die Entertaste um zu den Einstellungen zu gelangen.";
             Output(outputText);
             return outputText;
         }
@@ -195,7 +197,7 @@ namespace Tutorial
         public static string NavigationOutput()
         {
             string outputText =
-                "Hiermit öffnest du die Tastenbelegung für die Navigation. Um eine Tastenbelegung zu ändern wähle in der Liste die zu ändernde Aktion aus und drücke die Enter-Taste. Danach drücke die gewünschte Taste. Die Aktion wird von nun an mit der neuen Taste ausgelöst.";
+                "Hiermit öffnest du die Tastenbelegung für die Navigation. Um eine Tastenbelegung zu ändern wähle in der Liste die zu ändernde Aktion aus und drücke die Enter-Taste. Danach drücke die gewünschte Taste. Die Aktion wird von nun an mit der neuen Taste ausgelöst. Das Ändern der Tastenbelegung ist in der Einführung nicht möglich.";
             Output(outputText);
             return outputText;
         }
@@ -234,7 +236,7 @@ namespace Tutorial
         public static string RebindBackOutputSubmit()
         {
             var outputText =
-                "Super! Du hast die Einführung abgeschlossen! Du kommst jetzt zum Spielbildschirm zurück und kannst ab jetzt frei navigieren. Viel Spaß beim Lernen.";
+                "Super! Du hast die Einführung abgeschlossen! Du kommst jetzt zum Spielbildschirm zurück und kannst ab jetzt frei navigieren. Du kannst die Einführung mit dem Knopf in dem Menüband jederzeit erneut starten. Viel Spaß beim Lernen. Drücke eine beliebige Taste zum Fortfahren.";
             Output(outputText);
             return outputText;
         }
@@ -248,14 +250,14 @@ namespace Tutorial
 
         public static string SkipTutorial()
         {
-            var outputText = "Einführung wird Übersprungen.";
+            var outputText = "Einführung wird Übersprungen. Drücke eine beliebige Taste zum Fortfahren.";
             Output(outputText);
             return outputText;
         }
 
         private static void Output(string text)
         {
-            IOEventManager.InvokeAssistiveOutput(text, Settings.GlobalSettings.standardOutputType);
+            IOEventManager.InvokeAssistiveOutput(text, SettingsManager.Settings.StandardOutputType);
         }
     }
 }

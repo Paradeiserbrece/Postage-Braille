@@ -14,31 +14,31 @@ namespace IO
 
         public override void Enable()
         {
-            Actions.Navigation.answer0.started += OnAnswer0;
-            Actions.Navigation.answer1.started += OnAnswer1;
-            Actions.Navigation.answer2.started += OnAnswer2;
-            Actions.Navigation.answer3.started += OnAnswer3;
-            Actions.Navigation.answer4.started += OnAnswer4;
-            Actions.Navigation.answer5.started += OnAnswer5;
-            Actions.Navigation.SwitchUILayer.started += OnSwitchUILayer;
-            Actions.Navigation.next.started += OnNext;
-            Actions.Navigation.prev.started += OnPrev;
-            Actions.Navigation.confirm.started += OnConfirm;
+            Actions.Navigation.antwort1.started += OnAnswer0;
+            Actions.Navigation.antwort2.started += OnAnswer1;
+            Actions.Navigation.antwort3.started += OnAnswer2;
+            Actions.Navigation.antwort4.started += OnAnswer3;
+            Actions.Navigation.antwort5.started += OnAnswer4;
+            Actions.Navigation.antwort6.started += OnAnswer5;
+            Actions.Navigation.UILayerwechseln.started += OnSwitchUILayer;
+            Actions.Navigation.weiter.started += OnNext;
+            Actions.Navigation.zurück.started += OnPrev;
+            Actions.Navigation.bestätigen.started += OnConfirm;
             Actions.Navigation.Enable();
         }
 
         public override void Disable()
         {
-            Actions.Navigation.answer0.started -= OnAnswer0;
-            Actions.Navigation.answer1.started -= OnAnswer1;
-            Actions.Navigation.answer2.started -= OnAnswer2;
-            Actions.Navigation.answer3.started -= OnAnswer3;
-            Actions.Navigation.answer4.started -= OnAnswer4;
-            Actions.Navigation.answer5.started -= OnAnswer5;
-            Actions.Navigation.SwitchUILayer.started -= OnSwitchUILayer;
-            Actions.Navigation.next.started -= OnNext;
-            Actions.Navigation.prev.started -= OnPrev;
-            Actions.Navigation.confirm.started -= OnConfirm;
+            Actions.Navigation.antwort1.started -= OnAnswer0;
+            Actions.Navigation.antwort2.started -= OnAnswer1;
+            Actions.Navigation.antwort3.started -= OnAnswer2;
+            Actions.Navigation.antwort4.started -= OnAnswer3;
+            Actions.Navigation.antwort5.started -= OnAnswer4;
+            Actions.Navigation.antwort6.started -= OnAnswer5;
+            Actions.Navigation.UILayerwechseln.started -= OnSwitchUILayer;
+            Actions.Navigation.weiter.started -= OnNext;
+            Actions.Navigation.zurück.started -= OnPrev;
+            Actions.Navigation.bestätigen.started -= OnConfirm;
             Actions.Navigation.Disable();
         }
 

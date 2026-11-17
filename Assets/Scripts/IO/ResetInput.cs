@@ -12,19 +12,19 @@ namespace IO
 
         public override void Enable()
         {
-            Actions.ResetInput.reset.started += OnReset;
-            Actions.ResetInput.Enable();
+            Actions.Constants.Tastenbelegungzurücksetzen.started += OnReset;
+            Actions.Constants.Enable();
         }
 
         public override void Disable()
         {
-            Actions.ResetInput.reset.started -= OnReset;
-            Actions.ResetInput.Disable();
+            Actions.Constants.Tastenbelegungzurücksetzen.started -= OnReset;
+            Actions.Constants.Disable();
         }
 
         private void OnReset(InputAction.CallbackContext callbackContext)
         {
-            ActionRebinder.ResetRebinds();
+            ActionRebinder.Instance.ResetRebinds();
             IOEventManager.AssistiveOutput("Tastenbelegung zurückgesetzt", AssistiveOutput.OutputType.Both);
         }
     }

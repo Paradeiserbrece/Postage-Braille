@@ -1,6 +1,8 @@
 ﻿using System;
 using Data;
+using UnityEditor.Analytics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace UI
 {
@@ -45,6 +47,7 @@ namespace UI
             CurrentUI.CurrentLayer.FocusFirst();
             Instance.mainCamera.transform.position = Instance.gameCameraTransform.position;
             GameManager.Instance.NextQuestion();
+            CurrentUI.SwitchLayer(0);
         }
 
         public static void TransitionToGameScreenInTutorial()
@@ -85,6 +88,12 @@ namespace UI
             Instance.currentScreen = Screen.PackagePickerScreen;
             CurrentUI.CurrentLayer.FocusFirst();
             Instance.mainCamera.transform.position = Instance.packagePickerCameraTransform.position;
+        }
+        
+        public static void StartTutorial()
+        {
+            SceneManager.LoadScene("Scenes/Tutorial", LoadSceneMode.Single);
+            
         }
     }
 }
