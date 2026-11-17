@@ -19,8 +19,10 @@ namespace Braille
     public class AssistiveOutput : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI visualOutputText;
+        
+        public string CurrentVisualOutputText => visualOutputText == null ? "" : visualOutputText.text;
 
-        private const float fontCharacterWidth = 0.63197183098591549295774647887324f;
+        private const float FontCharacterWidth = 0.63197183098591549295774647887324f;
         private string _resetTextPos;
         private string _startTextScrolling;
 
@@ -124,17 +126,17 @@ namespace Braille
 
         /// <summary>
         /// Calculates the endposition of <see cref="visualOutputText"/> based on _text.text.length, the fontsize and the
-        /// <see cref="fontCharacterWidth"/> such that the last character of _text.text is just visible in the TextMeshProUGUI
+        /// <see cref="FontCharacterWidth"/> such that the last character of _text.text is just visible in the TextMeshProUGUI
         ///
         /// If the text is not overflowing its boundaries, <see cref="endTextPosX"/> is set to <see cref="defaultTextPosX"/>
         /// </summary>
         private void CalculateOutputTextPos()
         {
-            if (visualOutputText.rectTransform.sizeDelta.x < fontCharacterWidth * visualOutputText.text.Length * visualOutputText.fontSize)
+            if (visualOutputText.rectTransform.sizeDelta.x < FontCharacterWidth * visualOutputText.text.Length * visualOutputText.fontSize)
             {
                 // Overflowing
                 endTextPosX = new Vector2(
-                    Math.Abs(visualOutputText.rectTransform.sizeDelta.x) - fontCharacterWidth * visualOutputText.fontSize * visualOutputText.text.Length,
+                    Math.Abs(visualOutputText.rectTransform.sizeDelta.x) - FontCharacterWidth * visualOutputText.fontSize * visualOutputText.text.Length,
                     visualOutputText.transform.localPosition.y);
             }
             else

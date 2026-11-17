@@ -338,17 +338,6 @@ namespace IO
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""4b873958-caf9-44f5-a955-b29d608f350f"",
-                    ""path"": ""<Keyboard>/f1"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Schriftgröße erhöhen"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""d4299620-add1-469b-9285-ac488a1f6271"",
                     ""path"": ""<Keyboard>/f2"",
                     ""interactions"": """",
@@ -2097,6 +2086,15 @@ namespace IO
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Popup anzeigen"",
+                    ""type"": ""Button"",
+                    ""id"": ""0ea47d5f-8e42-4a1e-9951-c0c20adfa04f"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -2119,6 +2117,28 @@ namespace IO
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""any"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""422ef236-cb5a-45f3-b825-aa37ed8bbdf5"",
+                    ""path"": ""<Keyboard>/f1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Popup anzeigen"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""055640cf-2c29-4124-915b-ab81a83ff8d2"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Popup anzeigen"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -2224,6 +2244,7 @@ namespace IO
             m_Constants = asset.FindActionMap("Constants", throwIfNotFound: true);
             m_Constants_Tastenbelegungzurücksetzen = m_Constants.FindAction("Tastenbelegung zurücksetzen", throwIfNotFound: true);
             m_Constants_any = m_Constants.FindAction("any", throwIfNotFound: true);
+            m_Constants_Popupanzeigen = m_Constants.FindAction("Popup anzeigen", throwIfNotFound: true);
         }
 
         ~@GameActions()
@@ -3649,6 +3670,7 @@ namespace IO
         private List<IConstantsActions> m_ConstantsActionsCallbackInterfaces = new List<IConstantsActions>();
         private readonly InputAction m_Constants_Tastenbelegungzurücksetzen;
         private readonly InputAction m_Constants_any;
+        private readonly InputAction m_Constants_Popupanzeigen;
         /// <summary>
         /// Provides access to input actions defined in input action map "Constants".
         /// </summary>
@@ -3668,6 +3690,10 @@ namespace IO
             /// Provides access to the underlying input action "Constants/any".
             /// </summary>
             public InputAction @any => m_Wrapper.m_Constants_any;
+            /// <summary>
+            /// Provides access to the underlying input action "Constants/Popupanzeigen".
+            /// </summary>
+            public InputAction @Popupanzeigen => m_Wrapper.m_Constants_Popupanzeigen;
             /// <summary>
             /// Provides access to the underlying input action map instance.
             /// </summary>
@@ -3700,6 +3726,9 @@ namespace IO
                 @any.started += instance.OnAny;
                 @any.performed += instance.OnAny;
                 @any.canceled += instance.OnAny;
+                @Popupanzeigen.started += instance.OnPopupanzeigen;
+                @Popupanzeigen.performed += instance.OnPopupanzeigen;
+                @Popupanzeigen.canceled += instance.OnPopupanzeigen;
             }
 
             /// <summary>
@@ -3717,6 +3746,9 @@ namespace IO
                 @any.started -= instance.OnAny;
                 @any.performed -= instance.OnAny;
                 @any.canceled -= instance.OnAny;
+                @Popupanzeigen.started -= instance.OnPopupanzeigen;
+                @Popupanzeigen.performed -= instance.OnPopupanzeigen;
+                @Popupanzeigen.canceled -= instance.OnPopupanzeigen;
             }
 
             /// <summary>
@@ -4392,6 +4424,13 @@ namespace IO
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
             void OnAny(InputAction.CallbackContext context);
+            /// <summary>
+            /// Method invoked when associated input action "Popup anzeigen" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// </summary>
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+            void OnPopupanzeigen(InputAction.CallbackContext context);
         }
     }
 }
