@@ -263,6 +263,9 @@ public class QuestionManager : MonoBehaviour
         Debug.Log("Answered with: " + answer + " and correct: " + correctAnswer + "  attempts: " +
                   LetterPackages.Instance.CurrentPackageUnit.attempts + " in %: " +
                   LetterPackages.Instance.CurrentPackageUnit.SuccessPercentage);
+        
+        LetterPackages.SaveCurrentLetterPackagesProgress();
+        
         return answer == correctAnswer;
     }
 
