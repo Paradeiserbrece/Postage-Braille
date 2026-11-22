@@ -55,11 +55,11 @@ namespace Serialization
         
         public static void DeleteProgress()
         {
-            var path = Path.Combine(Application.persistentDataPath, LetterPackages.Instance.currentLanguage + "_save.json");
+            var path = Path.Combine(Application.persistentDataPath);
 
-            if (File.Exists(path))
+            if (Directory.Exists(path))
             {
-                File.Delete(path);
+                Directory.Delete(path, true);
             }
 
             LetterPackages.Instance.ResetLetterPackages();
